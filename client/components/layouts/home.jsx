@@ -5,7 +5,6 @@ Homelayout = React.createClass({
   render(){
     return (
       <div>
-        Content Here
         <Nav />
       </div>
     )

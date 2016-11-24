@@ -1,6 +1,70 @@
 /*Nav Styles*/
 #nav-wrapper {
-  background-color: blue;
-  height: 300px;
-  width: 300px;
+    background-color: #181723;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+
+    .navlist {
+        list-style-type: none !important;
+        text-align: center;
+
+        .navlist-item {
+          font-size: 50px;
+          line-height: 100px;
+          font-family: goku;
+
+            .nav-link {}
+        }
+    }
+}
+
+/*********************
+  Button Nav Styles
+**********************/
+.btn-square-fixed {
+}
+.btn-nav{
+   position:fixed;
+   top: 30px;
+   right: 30px;
+   height: 50px;
+   width: 50px;
+   z-index: 999;
+   background-color: transparent !important;
+   display: block;
+}
+.bar{
+   display: block;
+   width: 35px;
+   border: black solid 2px;
+   border-radius: 2px;
+   margin: 10px;
+      -webkit-transition: all 1s 0s;
+   -moz-transition: all 1s 0s;
+   -ms-transition: all 1s 0s;
+   -o-transition: all 1s 0s;
+   transition: all 1s 0s;
+}
+.animatedButton{
+   z-index: 100;
+}
+.bar-top.animatedButton{
+   -ms-transform: translate(0px,13px) rotate(-45deg); /* IE 9 */
+   -webkit-transform: translate(0px,13px) rotate(-45deg); /* Safari */
+    transform: translate(0px,13px) rotate(-45deg);
+}
+.bar-mid.animatedButton{
+   width: 0px;
+   transform: translate(17px, 0px);
+}
+.bar-bot.animatedButton{
+   -ms-transform: translate(0px,-13px) rotate(45deg); /* IE 9 */
+   -webkit-transform: translate(0px,-13px) rotate(45deg); /* Safari */
+    transform: translate(0px,-14px) rotate(45deg);
+}
+
+.border-white {
+  border-color: white !important;
 }
