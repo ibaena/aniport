@@ -13,7 +13,7 @@
         .navlist-item {
           font-size: 50px;
           line-height: 100px;
-          font-family: goku;
+          font-family: 'Megrim', cursive;
 
             .nav-link {}
         }
@@ -67,4 +67,21 @@
 
 .border-white {
   border-color: white !important;
+}
+/*********************
+  Nav BG Styles
+**********************/
+.nav-bg {
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  left: 15%;
+  opacity: .3;
+}
+
+.hide-nav-bg {
+  visibility: hidden;
+}
+.show-nav-bg {
+  visibility: hidden;
 }
