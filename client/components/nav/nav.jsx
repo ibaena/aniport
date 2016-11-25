@@ -7,7 +7,7 @@ Nav = React.createClass({
     {_id:'1',name:'Amloid Toys', background:'images/nav/bothamloid.png', animate:'', color:'' },
     {_id:'2',name:'Feverall', background:'images/nav/feverthree.png', animate:'', color:'' },
     {_id:'3',name:'Nice n Clean', background:'images/nav/nicencleanboth.png', animate:'', color:'' },
-    {_id:'4',name:'Wine 4 Food', background:'', animate:'', color:'' },
+    {_id:'4',name:'Wine 4 Food', background:'images/nav/wineboth.png', animate:'', color:'' },
   ],
   componentDidMount(){
     $('#nav-wrapper').hide();
