@@ -4,88 +4,122 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-
+    margin: 0;
+    overflow: hidden;
 
     .navlist {
         list-style-type: none !important;
         text-align: center;
 
         .navlist-item {
-          font-size: 50px;
-          line-height: 100px;
-          font-family: 'Megrim', cursive;
+            font-size: 50px;
+            line-height: 100px;
+            font-family: 'Megrim', cursive;
 
             .nav-link {}
         }
     }
 }
-
 /*********************
   Button Nav Styles
 **********************/
-.btn-square-fixed {
+.btn-square-fixed {}
+
+.btn-nav {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+    background-color: transparent !important;
+    display: block;
 }
-.btn-nav{
-   position:fixed;
-   top: 30px;
-   right: 30px;
-   height: 50px;
-   width: 50px;
-   z-index: 999;
-   background-color: transparent !important;
-   display: block;
+
+.bar {
+    display: block;
+    width: 35px;
+    border: black solid 2px;
+    border-radius: 2px;
+    margin: 10px;
+    -webkit-transition: all 1s 0s;
+    -moz-transition: all 1s 0s;
+    -ms-transition: all 1s 0s;
+    -o-transition: all 1s 0s;
+    transition: all 1s 0s;
 }
-.bar{
-   display: block;
-   width: 35px;
-   border: black solid 2px;
-   border-radius: 2px;
-   margin: 10px;
-      -webkit-transition: all 1s 0s;
-   -moz-transition: all 1s 0s;
-   -ms-transition: all 1s 0s;
-   -o-transition: all 1s 0s;
-   transition: all 1s 0s;
+
+.animatedButton {
+    z-index: 100;
 }
-.animatedButton{
-   z-index: 100;
-}
-.bar-top.animatedButton{
-   -ms-transform: translate(0px,13px) rotate(-45deg); /* IE 9 */
-   -webkit-transform: translate(0px,13px) rotate(-45deg); /* Safari */
+
+.bar-top.animatedButton {
+    -ms-transform: translate(0px,13px) rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: translate(0px,13px) rotate(-45deg);
+    /* Safari */
     transform: translate(0px,13px) rotate(-45deg);
 }
-.bar-mid.animatedButton{
-   width: 0px;
-   transform: translate(17px, 0px);
+
+.bar-mid.animatedButton {
+    width: 0;
+    transform: translate(17px, 0px);
 }
-.bar-bot.animatedButton{
-   -ms-transform: translate(0px,-13px) rotate(45deg); /* IE 9 */
-   -webkit-transform: translate(0px,-13px) rotate(45deg); /* Safari */
+
+.bar-bot.animatedButton {
+    -ms-transform: translate(0px,-13px) rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: translate(0px,-13px) rotate(45deg);
+    /* Safari */
     transform: translate(0px,-14px) rotate(45deg);
 }
 
 .border-white {
-  border-color: white !important;
+    border-color: white !important;
 }
 /*********************
   Nav BG Styles
 **********************/
-.nav-bg {
+.nav-bg-home {
   position: fixed;
   display: inline-block;
   margin: 0 auto;
   left: 30%;
   top: 10%;
-  opacity: .3 !important;
+  opacity: 0.3 !important;
   z-index: -1;
   height: 600px;
   float: right;
 }
+.nav-bg {
+    position: fixed;
+    display: inline-block;
+    margin: 0 auto;
+    left: 30%;
+    top: 10%;
+    opacity: 0.3 !important;
+    z-index: -1;
+    height: 600px;
+    float: right;
+}
 
 .hide-nav-bg {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 .show-nav-bg {
-  visibility: hidden;
+    visibility: hidden;
+}
+
+.home-nav-img {
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+    opacity: 0.1 !important;
 }

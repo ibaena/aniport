@@ -3,11 +3,11 @@ import { mount } from 'react-mounter';
 
 Nav = React.createClass({
   menu:[
-    {_id:'0',name:'Home', background:'', animate:'', color:'' },
-    {_id:'1',name:'Amloid Toys', background:'images/nav/bothamloid.png', animate:'', color:'' },
-    {_id:'2',name:'Feverall', background:'images/nav/feverthree.png', animate:'', color:'' },
-    {_id:'3',name:'Nice n Clean', background:'images/nav/nicencleanboth.png', animate:'', color:'' },
-    {_id:'4',name:'Wine 4 Food', background:'images/nav/wineboth.png', animate:'', color:'' },
+    {_id:'0',name:'Home', background:'images/nav/ivan-stencil.png', class:'nav-bg-home hide-nav-bg animated home-nav-img ', color:'', elementId: 'home-bg' },
+    {_id:'1',name:'Amloid Toys', background:'images/nav/bothamloid.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'2',name:'Feverall', background:'images/nav/feverthree.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'3',name:'Nice n Clean', background:'images/nav/nicencleanboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'4',name:'Wine 4 Food', background:'images/nav/wineboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
   ],
   componentDidMount(){
     $('#nav-wrapper').hide();
@@ -25,6 +25,12 @@ Nav = React.createClass({
     $('.nav-link').on('mouseleave', function(){
       $(this).find('.nav-bg').toggleClass('hvr-shrink hide-nav-bg');
     });
+    $('.nav-link').on('mouseover', function(){
+      $(this).find('.nav-bg-home').toggleClass('hide-nav-bg hvr-grow');
+    });
+    $('.nav-link').on('mouseleave', function(){
+      $(this).find('.nav-bg-home').toggleClass('hvr-grow hide-nav-bg ');
+    });
   },
   render(){
     var links = this.menu.map(function(item){
@@ -32,7 +38,7 @@ Nav = React.createClass({
 
         <li className="navlist-item" key={item._id}>
           <a href="#" className="white-text nav-link alwaysTop">{item.name}
-            <img src={item.background} className="nav-bg hide-nav-bg animated center-img" alt={item.name} />
+            <img src={item.background} className={item.class} id={item.elementId} alt={item.name} />
           </a>
         </li>
       )
