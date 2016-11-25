@@ -1,21 +1,31 @@
 /*Base Site Vaiables*/
-
 /*Colors*/
 .white-text {
-  color: white !important;
-  text-decoration: none !important;
+    color: white !important;
+    text-decoration: none !important;
 }
-
-
 /*Margin and Padding*/
 .no-padding {
-  padding: 0 !important;
+    padding: 0 !important;
 }
+
 .vcenter {
-  position: relative;;
-  top: 14%;
+    position: relative;
+    top: 14%;
 }
 
 .alwaysTop {
-  z-index: 9999;
+    z-index: 9999;
+}
+
+.center-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 500px;
+    margin-top: -250px;
+    /* Half the height */
+    margin-left: -400px;
+    /* Half the width */
 }

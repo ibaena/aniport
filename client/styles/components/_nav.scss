@@ -73,11 +73,14 @@
 **********************/
 .nav-bg {
   position: fixed;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
-  left: 15%;
-  opacity: .3;
+  left: 30%;
+  top: 10%;
+  opacity: .3 !important;
   z-index: -1;
+  height: 600px;
+  float: right;
 }
 
 .hide-nav-bg {
