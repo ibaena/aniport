@@ -3,9 +3,10 @@
     background-color: #181723;
     height: 100vh;
     width: 100vw;
-    position: relative;
+    position: absolute;
     margin: 0;
     overflow: hidden;
+    z-index: 10;
 
     .navlist {
         list-style-type: none !important;
@@ -19,11 +20,13 @@
             .nav-link {}
         }
     }
+
     .contactlist {
         list-style-type: none !important;
         text-align: center;
         font-size: 0;
         margin-top: 60px;
+
         .contactlist-item {
             font-size: 13px;
             font-family: 'Megrim', cursive;
@@ -31,11 +34,12 @@
             margin: 15px;
 
             .contact-link {
-              padding: 4px;
+                padding: 4px;
             }
+
             .contact-link:hover {
-              background-color: rgba(255, 255, 255, 0.1);
-              border-radius: 8px;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
             }
         }
     }
@@ -54,13 +58,19 @@
     z-index: 999;
     background-color: transparent !important;
     display: block;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding-right: 54px;
+    padding-bottom: 47px;
 }
 
 .bar {
+    color: white;
     display: block;
     width: 35px;
-    border: black solid 2px;
-    border-radius: 2px;
+    border: white solid 1px;
+    border-radius: 1px;
     margin: 10px;
     -webkit-transition: all 1s 0s;
     -moz-transition: all 1s 0s;
@@ -83,15 +93,15 @@
 
 .bar-mid.animatedButton {
     width: 0;
-    transform: translate(17px, 0px);
+    transform: translate(14px, 0px);
 }
 
 .bar-bot.animatedButton {
-    -ms-transform: translate(0px,-13px) rotate(45deg);
+    -ms-transform: translate(0px,-10px) rotate(45deg);
     /* IE 9 */
-    -webkit-transform: translate(0px,-13px) rotate(45deg);
+    -webkit-transform: translate(0px,-10px) rotate(45deg);
     /* Safari */
-    transform: translate(0px,-14px) rotate(45deg);
+    transform: translate(0px,-10px) rotate(45deg);
 }
 
 .border-white {
@@ -101,16 +111,17 @@
   Nav BG Styles
 **********************/
 .nav-bg-home {
-  position: fixed;
-  display: inline-block;
-  margin: 0 auto;
-  left: 30%;
-  top: 10%;
-  opacity: 0.3 !important;
-  z-index: -1;
-  height: 600px;
-  float: right;
+    position: fixed;
+    display: inline-block;
+    margin: 0 auto;
+    left: 30%;
+    top: 10%;
+    opacity: 0.3 !important;
+    z-index: -1;
+    height: 600px;
+    float: right;
 }
+
 .nav-bg {
     position: fixed;
     display: inline-block;

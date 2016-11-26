@@ -4,8 +4,11 @@ import { mount } from 'react-mounter';
 Homelayout = React.createClass({
   render(){
     return (
-      <div>
+      <div >
         <Nav />
+        <div className="">
+          <Landing />
+        </div>
       </div>
     )
   }
