@@ -3,11 +3,11 @@ import { mount } from 'react-mounter';
 
 Nav = React.createClass({
   menu:[
-    {_id:'0',name:'Home', background:'images/nav/ivan-stencil.png', class:'nav-bg-home hide-nav-bg animated home-nav-img ', color:'', elementId: 'home-bg' },
-    {_id:'1',name:'Amloid Toys', background:'images/nav/bothamloid.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
-    {_id:'2',name:'Feverall', background:'images/nav/feverthree.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
-    {_id:'3',name:'Nice n Clean', background:'images/nav/nicencleanboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
-    {_id:'4',name:'Wine 4 Food', background:'images/nav/wineboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'0',name:'Home', src:'/', background:'images/nav/ivan-stencil.png', class:'nav-bg-home hide-nav-bg animated home-nav-img ', color:'', elementId: 'home-bg' },
+    {_id:'1',name:'Amloid Toys', src:'/amloid', background:'images/nav/bothamloid.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'2',name:'Feverall', src:'/feverall', background:'images/nav/feverthree.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'3',name:'Nice n Clean', src:'#', background:'images/nav/nicencleanboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'4',name:'Wine 4 Food', src:'#', background:'images/nav/wineboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
   ],
   contact:[
     {_id:'0', name:'TWITTER', link:'https://twitter.com/NotThefakeIB'},
@@ -24,8 +24,20 @@ Nav = React.createClass({
           $('.navlist').toggleClass('hide-nav-bg fadeIn');
           $('.contactlist').toggleClass('hide-nav-bg fadeIn');
         }, 0600);
+    });
 
-    })
+    $('.nav-link').on('click tap', function(){
+      var href = $(this).attr('href');
+      var stateObj = { foo: "bar" };
+      history.pushState(stateObj, "page 2", 'http://localhost:3000'+href  );
+
+      $('#nav-wrapper').toggleClass('slideOutUp slideInDown')
+        setTimeout(function(){
+          $('.navlist').toggleClass('hide-nav-bg fadeIn');
+          $('.contactlist').toggleClass('hide-nav-bg fadeIn');
+        }, 0600);
+    });
+
     $(".btn-nav").on("click tap", function(){
       $(".bar").toggleClass("animatedButton");
       $(".bar").toggleClass("border-white");
@@ -48,7 +60,7 @@ Nav = React.createClass({
       return (
 
         <li className="navlist-item" key={item._id}>
-          <a href="#" className="white-text nav-link alwaysTop">{item.name}
+          <a href={item.src} className="white-text nav-link alwaysTop">{item.name}
             <img src={item.background} className={item.class} id={item.elementId} alt={item.name} />
           </a>
         </li>
