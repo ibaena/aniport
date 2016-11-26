@@ -12,11 +12,31 @@
         text-align: center;
 
         .navlist-item {
-            font-size: 50px;
-            line-height: 100px;
+            font-size: 55px;
+            line-height: 95px;
             font-family: 'Megrim', cursive;
 
             .nav-link {}
+        }
+    }
+    .contactlist {
+        list-style-type: none !important;
+        text-align: center;
+        font-size: 0;
+        margin-top: 60px;
+        .contactlist-item {
+            font-size: 13px;
+            font-family: 'Megrim', cursive;
+            display: inline;
+            margin: 15px;
+
+            .contact-link {
+              padding: 4px;
+            }
+            .contact-link:hover {
+              background-color: rgba(255, 255, 255, 0.1);
+              border-radius: 8px;
+            }
         }
     }
 }
