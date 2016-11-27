@@ -77,7 +77,7 @@ Nav = React.createClass({
     });
     return (
       <div>
-        <btn className="btn-nav btn-square-fixed" id="nav-btn">
+        <btn className="btn-nav btn-square-fixed button_sliding_bg" id="nav-btn">
           <div className="bar bar-top"></div>
           <div className="bar bar-mid"></div>
           <div className="bar bar-bot"></div>
