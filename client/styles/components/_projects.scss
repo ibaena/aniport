@@ -6,59 +6,110 @@
 }
 
 .projects-wrapper {
-  width: 100%;
-  position: absolute;
-  height: 100vh;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
 }
+
 .slideUp {
-  animation-name: slideUp;
+    animation-name: slideUp;
 }
 @keyframes slideUp {
-  0% {
-    transform-origin: 0 0;
-    transform: translateY(0%);
-  }
+    0% {
+        transform-origin: 0 0;
+        transform: translateY(0%);
+    }
 
-  100% {
-    transform-origin: 0 0;
-    transform: translateY(-100%);
-  }
+    100% {
+        transform-origin: 0 0;
+        transform: translateY(-100%);
+    }
 }
 
 .slideUpReturn {
-  animation-name: slideUpReturn;
+    animation-name: slideUpReturn;
 }
 @keyframes slideUpReturn {
-  0% {
-    transform-origin: 0 0;
-    transform: translateY(-100%);
-  }
+    0% {
+        transform-origin: 0 0;
+        transform: translateY(-100%);
+    }
 
-  100% {
-    transform-origin: 0 0;
-    transform: translateY(0%);
-  }
+    100% {
+        transform-origin: 0 0;
+        transform: translateY(0%);
+    }
 }
+
 .magictime {
     animation-duration: 1s;
     animation-fill-mode: both;
 }
-
 /***************
   Page
 ****************/
 .btn-wrapper-top {
-  position: absolute;
-  top: 5vh;
-  left: 5vh;
-  opacity: .3;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    opacity: 0.3;
 
-  .btn-home {
-    cursor: pointer;
-    color: black;
-    font-size: .9em;
-  }
-  .btn-enter:hover {
-    color:black;
-  }
+    .btn-home {
+        cursor: pointer;
+        color: black;
+        font-size: 0.9em;
+    }
+
+    .btn-enter:hover {
+        color: black;
+    }
+}
+
+.project-container {
+    position: absolute;
+    top: 15vh;
+    left: 6%;
+    width: 1200px;
+    height: 500px;
+    background: red;
+
+    .project-box {
+        position: absolute;
+        bottom: 15%;
+        margin-left: 7%;
+
+        .header-title-small {
+            position: relative;
+            bottom: 150px;
+        }
+
+        .header-title-large {
+            position: relative;
+            bottom: 80px;
+        }
+
+        .product-description {
+            width: 400px;
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+        }
+
+        .role-list {
+          position: relative;
+          top: 40px;
+            .role-td {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+        .product-image {
+          position: relative;
+          img {
+            position: absolute;
+            right: -100vh;
+            top: -50vh;
+          }
+        }
+    }
 }

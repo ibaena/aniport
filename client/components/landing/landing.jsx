@@ -25,7 +25,6 @@ Landing = React.createClass({
             </li>
             <li className="side-list-last">Ivan Baena</li>
           </ul>
-
           <div className="text-box">
             <div className="intro-one"><p className="intro-one-text"><span className="highlight-text">I’M A WEB DEVELOPER</span>  from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group. With web development, my strength lies in the Front End of website and app development.</p></div>
             <div className="intro-two"><p className="intro-two-text">If you want to know more about me, my work or if youʼre an Elder Scrolls Skyrim or want to talk Knicks basketball, feel free to contact me on ivan.baena04 [at] gmail.com.</p></div>

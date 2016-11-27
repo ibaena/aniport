@@ -62,7 +62,7 @@
     background-color: transparent !important;
     display: block;
     border-style: solid;
-    border-color: white;
+    border-color: lightgray;
     border-width: thin;
     padding-right: 54px;
     padding-bottom: 47px;
@@ -70,10 +70,10 @@
 }
 
 .bar {
-    color: white;
+    color: lightgray;
     display: block;
     width: 35px;
-    border: white solid 1px;
+    border: lightgray solid 1px;
     border-radius: 1px;
     margin: 10px;
     -webkit-transition: all 1s 0s;
@@ -173,6 +173,7 @@
 }
 
 .btn-nav:hover {
+  border-color: black;
   .bar {
     border-color: black !important;
   }
