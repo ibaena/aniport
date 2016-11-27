@@ -5,18 +5,19 @@
     position: absolute;
     top: 5vh;
     left: 5vh;
-    opacity: 0.3;
 
     .pagenav-list {
         list-style-type: none;
         position: absolute;
-        top: 40vh;
-        left: -3px;
-        z-index: 999;
+        top: 43vh;
+        left: 38px;
+        z-index: 1;
         border-style: solid;
         border-width: thin;
+        border-color: lightgray;
         border-radius: 10px;
         padding: 3px;
+        background: white;
 
         .pagenav-list-item {}
     }

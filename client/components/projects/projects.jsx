@@ -4,7 +4,8 @@ import { mount } from 'react-mounter';
 Projects = React.createClass({
   componentDidMount(){
 
-  },
+
+    },
   render(){
     return (
       <div className="projects-wrapper">
@@ -17,9 +18,9 @@ Projects = React.createClass({
             <table className="role-list">
               <thead>
                 <tr>
-                  <td><h4 className="role-td">Role</h4></td>
-                  <td><h4 className="role-td">Agency</h4></td>
-                  <td><h4 className="role-td">2014</h4></td>
+                  <td><h4 className="role-td-header">Role</h4></td>
+                  <td><h4 className="role-td-header">Agency</h4></td>
+                  <td><h4 className="role-td-header">Year</h4></td>
                 </tr>
               </thead>
               <tbody>
@@ -32,6 +33,9 @@ Projects = React.createClass({
             </table>
             <div className="product-image">
               <img src="http://placehold.it/350x350" className="animated slideInRight"/>
+            </div>
+            <div className="product-btn-wrapper">
+              <div className="product-btn">Launch Project</div>
             </div>
           </div>
         </div>
