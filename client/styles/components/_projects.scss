@@ -1,0 +1,64 @@
+/*****************
+  Project Styles
+******************/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-wrapper {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+}
+.slideUp {
+  animation-name: slideUp;
+}
+@keyframes slideUp {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+  }
+}
+
+.slideUpReturn {
+  animation-name: slideUpReturn;
+}
+@keyframes slideUpReturn {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+  }
+}
+.magictime {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/***************
+  Page
+****************/
+.btn-wrapper-top {
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  opacity: .3;
+
+  .btn-home {
+    cursor: pointer;
+    color: black;
+    font-size: .9em;
+  }
+  .btn-enter:hover {
+    color:black;
+  }
+}

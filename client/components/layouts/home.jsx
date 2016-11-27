@@ -6,8 +6,9 @@ Homelayout = React.createClass({
     return (
       <div >
         <Nav />
-        <div className="">
+        <div className="" id="container-home">
           <Landing />
+          <Projects />
         </div>
       </div>
     )

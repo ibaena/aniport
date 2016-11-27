@@ -2,14 +2,19 @@ import React from 'react';
 import { mount } from 'react-mounter';
 
 Landing = React.createClass({
+
   componentDidMount(){
     setTimeout(function(){
       $('.landing-img-logo').toggleClass('hide-nav-bg animated slideInLeft');
-    }, 1500);
+    }, 1200);
+    $(window).on('scroll', function() {
+      $('.landing-bg').removeClass('slideUpReturn');
+      $('.landing-bg').addClass('slideUp');
+    });
   },
   render(){
     return (
-      <div className="landing-bg">
+      <div className="landing-bg magictime ">
         <div id="landing-overlay"></div>
         <div className="container-fluid landing-zdex" >
           <ul className="side-list-landing">

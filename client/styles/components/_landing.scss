@@ -1,16 +1,21 @@
 /*landing Page Styles*/
 .landing-bg {
-    height: 100vh;
+    height: 100.1vh;
     width: 100%;
     margin: 0;
+    background-color: #1b1a25;
     background-image: url('images/nav/ivan-stencil.png');
-    background-attachment: fixed;
-    background-position: center;
     background-size: cover;
+    background-position: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+
 
     #landing-overlay {
         position: absolute;
-        height: 100vh;
+        height: 100.1vh;
         width: 100%;
         background: rgba(24, 23, 35, 0.7);
     }
@@ -107,9 +112,23 @@
     left: -10vh;
     margin: auto;
     width: 300px;
-    opacity: .6;
-
+    opacity: 0.6;
 }
-.logo {
-  
+
+.logo {}
+
+.btn-wrapper {
+  position: absolute;
+  bottom: -55vh;
+  left: 40vh;
+  opacity: .3;
+
+  .btn-enter {
+    cursor: pointer;
+    color: white;
+    font-size: .9em;
+  }
+  .btn-enter:hover {
+    color:black;
+  }
 }
