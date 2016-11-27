@@ -7,7 +7,7 @@ Projectlayout = React.createClass({
       <div >
         <Nav />
         <div className="">
-          PROJECT
+
         </div>
       </div>
     )
