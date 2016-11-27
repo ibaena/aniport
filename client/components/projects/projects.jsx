@@ -3,10 +3,7 @@ import { mount } from 'react-mounter';
 
 Projects = React.createClass({
   componentDidMount(){
-    $('.btn-home').on('click', function(){
-      $('.landing-bg').removeClass('slideUp');
-      $('.landing-bg').addClass('slideUpReturn');
-    });
+
   },
   render(){
     return (

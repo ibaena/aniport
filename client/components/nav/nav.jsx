@@ -28,8 +28,6 @@ Nav = React.createClass({
 
     $('.nav-link').on('click tap', function(){
       var href = $(this).attr('href');
-      var stateObj = { foo: "bar" };
-      history.pushState(stateObj, "page 2", 'http://localhost:3000'+href  );
 
       $('#nav-wrapper').toggleClass('slideOutUp slideInDown')
         setTimeout(function(){

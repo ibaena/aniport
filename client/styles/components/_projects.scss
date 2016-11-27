@@ -48,22 +48,7 @@
 /***************
   Page
 ****************/
-.btn-wrapper-top {
-    position: absolute;
-    top: 5vh;
-    left: 5vh;
-    opacity: 0.3;
 
-    .btn-home {
-        cursor: pointer;
-        color: black;
-        font-size: 0.9em;
-    }
-
-    .btn-enter:hover {
-        color: black;
-    }
-}
 
 .project-container {
     position: absolute;
@@ -71,7 +56,8 @@
     left: 6%;
     width: 1200px;
     height: 500px;
-    background: red;
+    border-style: solid;
+    border-width: thin;
 
     .project-box {
         position: absolute;
