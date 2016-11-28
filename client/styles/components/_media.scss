@@ -29,6 +29,10 @@
         top: 320px !important;
         left: 36px !important;
     }
+    .text-box {
+      top:40vw;
+      left: 45vh;
+    }
 }
 /******************
   13" screen 1260px
@@ -52,6 +56,10 @@
         top: 320px !important;
         left: 51px !important;
     }
+    .text-box {
+        top: 35vw;
+        left: 74vh;
+    }
 }
 /*******************
   19" screen 1440px
@@ -72,6 +80,10 @@
 
     .product-description {
         width: 450px !important;
+    }
+    .text-box {
+        top: 35vw;
+        left: 80vh;
     }
 }
 /*******************
@@ -133,6 +145,10 @@
     .project-container {
         top: 22%;
     }
+    .text-box {
+        top: 35vw;
+        left: 84vh;
+    }
 }
 /*************************
   23" - 24" screen 1920px
@@ -162,5 +178,9 @@
 
     .project-container {
         top: 22%;
+    }
+    .text-box {
+        top: 31vw;
+        left: 95vh;
     }
 }
