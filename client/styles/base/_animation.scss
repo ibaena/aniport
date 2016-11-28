@@ -98,3 +98,36 @@ pullUp
 		-webkit-transform: scaleY(1);
 	}
 }
+
+.slideDown {
+  animation-name: slideDown;
+}
+@keyframes slideDown {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(100%);
+  }
+}
+.slideDownReturn {
+  animation-name: slideDownReturn;
+}
+@keyframes slideDownReturn {
+  0% {
+    transform-origin: 0 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: translateY(0%);
+  }
+}
+.magictime {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}

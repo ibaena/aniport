@@ -9,6 +9,7 @@ Homelayout = React.createClass({
         <div className="container-fluid no-padding" id="container-home">
           <Landing />
           <Projects />
+          <Social />
         </div>
       </div>
     )

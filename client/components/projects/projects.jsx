@@ -45,7 +45,7 @@ Projects = React.createClass({
       )
     });
     return (
-      <div className="projects-wrapper " >
+      <div className="projects-wrapper" >
         <Pagenav />
         <div className="project-container row">
           <div className="project-box col-xs-12">
