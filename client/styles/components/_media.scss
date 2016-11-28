@@ -8,7 +8,8 @@
     .page-img {
         width: 600px !important;
         height: auto !important;
-        bottom: 40px !important;
+        right: -24vh !important;
+        bottom: -4vh !important;
     }
 
     .product-btn,
@@ -37,7 +38,7 @@
 /******************
   13" screen 1260px
 *******************/
-@media only screen and (min-width: 1259px) and (max-width: 1364px) {
+@media only screen and (min-width: 1199px) and (max-width: 1281px) {
     .product-btn,
     .proj-btn-ani,
     .proj-btn-ani-brown,
@@ -59,6 +60,42 @@
     .text-box {
         top: 35vw;
         left: 74vh;
+    }
+    .page-img {
+        position: absolute;
+        right: -30vh !important;
+        bottom: -6vh !important;
+    }
+}
+/*******************
+  15" screen 1366px
+********************/
+@media only screen and (min-width: 1282px) and (max-width: 1367px) {
+    .product-btn,
+    .proj-btn-ani,
+    .proj-btn-ani-brown,
+    .proj-btn-ani-lightbrown,
+    .proj-btn-ani-yellow {
+        left: 34em !important;
+    }
+
+    .pagenav-list {
+        top: 330px !important;
+        left: 58px !important;
+    }
+
+    .product-description {
+        width: 450px !important;
+    }
+    .text-box {
+        top: 35vw;
+        left: 80vh;
+    }
+    .page-img {
+        position: absolute;
+        right: -30vh !important;
+        bottom: -4vh !important;
+
     }
 }
 /*******************
@@ -84,6 +121,11 @@
     .text-box {
         top: 35vw;
         left: 80vh;
+    }
+    .page-img {
+        position: absolute;
+        right: -25vh !important;
+        bottom: -7vh !important;
     }
 }
 /*******************
@@ -114,6 +156,11 @@
 
     .project-container {
         top: 22%;
+    }
+    .page-img {
+        position: absolute;
+        right: -25vh !important;
+        bottom: -8vh !important;
     }
 }
 /*******************
@@ -149,6 +196,11 @@
         top: 35vw;
         left: 84vh;
     }
+    .page-img {
+      position: absolute;
+      right: -20vh !important;
+      bottom: -2vh !important;
+    }
 }
 /*************************
   23" - 24" screen 1920px
@@ -182,5 +234,11 @@
     .text-box {
         top: 31vw;
         left: 95vh;
+    }
+    .page-img {
+        position: absolute;
+        right: -20vh !important;
+        bottom: -6vh !important;
+        width: 900px !important;
     }
 }

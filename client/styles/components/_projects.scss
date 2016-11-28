@@ -76,158 +76,6 @@
             text-align: center;
             font-family: 'Pathway Gothic One', sans-serif;
         }
-        /***************
-          Page
-        ****************/
-        .project-container {
-            position: fixed;
-            top: 17%;
-            left: 6%;
-            width: 87%;
-            height: 500px;
-            border-style: solid;
-            border-width: thin;
-            border-right-style: none;
-            border-color: lightgray;
-
-            .project-box {
-                position: absolute;
-                bottom: 10%;
-                margin-left: 7%;
-
-                .header-title-small {
-                    position: absolute;
-                    top: -20.2em;
-                    border: solid;
-                    border-width: thin;
-                    border-color: transparent;
-                    width: 130px;
-                    padding: 5px;
-                    background-color: white;
-                    text-align: center;
-                    font-family: 'Pathway Gothic One', sans-serif;
-                }
-
-                .header-title-large {
-                    position: absolute;
-                    top: -375px;
-                    font-size: 80px;
-                    font-family: 'Megrim', cursive;
-                }
-
-                .product-description {
-                    width: 400px;
-                    position: absolute;
-                    top: -225px;
-                    left: 100px;
-                    letter-spacing: 1px;
-                    font-family: 'Open Sans Condensed', sans-serif;
-                    font-size: calc(.8rem + .718vw);
-                }
-
-                .role-list {
-                    position: absolute;
-                    bottom: -30px;
-
-                    .role-td-header {}
-
-                    .role-td-header {
-                        margin-right: 20px;
-                        margin-left: 20px;
-                        font-family: 'Pathway Gothic One', sans-serif;
-                        font-size: 20px;
-                    }
-
-                    .role-td {
-                        margin-right: 20px;
-                        margin-left: 20px;
-                        font-family: 'Pathway Gothic One', sans-serif;
-                        color: lightgray;
-                        letter-spacing: 1px;
-                    }
-                }
-
-                .product-image {
-                    position: relative;
-
-                    img {
-                        position: absolute;
-                        right: 100px;
-                        bottom: 30px;
-                    }
-                }
-
-                .product-btn-wrapper {
-                    .product-btn {
-                        border-style: solid;
-                        border-width: thin;
-                        border-color: lightgray;
-                        width: 130px;
-                        height: 40px;
-                        cursor: pointer;
-                        position: absolute;
-                        bottom: -70px;
-                        left: 31em;
-                        background: white;
-                        padding: 9px;
-                        text-align: center;
-                        box-shadow: inset 0 0 0 0 lightgray;
-                        -webkit-transition: all ease 0.8s;
-                        -moz-transition: all ease 0.8s;
-                        transition: all ease 0.8s;
-                    }
-
-                    .product-btn:hover {
-                        box-shadow: inset 0 100px 0 0 lightgray;
-                        color: white;
-                    }
-                }
-            }
-        }
-
-        .hide-project {
-            display: none;
-        }
-
-        .show-project {
-            display: inherit;
-        }
-
-        .page-img {
-            height: auto !important;
-            width: 800px;
-        }
-        /****************
-          Feveral Button
-          **************/
-        .proj-btn-ani {
-            border-style: solid;
-            border-width: thin;
-            border-color: lightgray;
-            width: 130px;
-            height: 40px;
-            cursor: pointer;
-            position: absolute;
-            bottom: -70px;
-            left: 31em;
-            background: white;
-            padding: 9px;
-            text-align: center;
-            box-shadow: inset 0 0 0 0 #000066 !important;
-            -webkit-transition: all ease 0.8s;
-            -moz-transition: all ease 0.8s;
-            transition: all ease 0.8s;
-        }
-
-        .proj-btn-ani:hover {
-            box-shadow: inset 0 100px 0 0 #000066 !important;
-            color: white;
-        }
-
-        .ani-blue {
-            box-shadow: inset 0 100px 0 0 #000066 !important;
-            color: white;
-        }
 
         .header-title-large {
             position: absolute;
@@ -273,8 +121,8 @@
 
             img {
                 position: absolute;
-                right: -200px;
-                bottom: -40px;
+                right: 100px;
+                bottom: 30px;
             }
         }
 
@@ -316,8 +164,123 @@
 
 .page-img {
     height: auto !important;
-    width: 800px !important;
+    width: 800px;
 }
+/****************
+          Feveral Button
+          **************/
+.proj-btn-ani {
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    left: 31em;
+    background: white;
+    padding: 9px;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #000066 !important;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+.proj-btn-ani:hover {
+    box-shadow: inset 0 100px 0 0 #000066 !important;
+    color: white;
+}
+
+.ani-blue {
+    box-shadow: inset 0 100px 0 0 #000066 !important;
+    color: white;
+}
+
+.header-title-large {
+    position: absolute;
+    top: -375px;
+    font-size: 80px;
+    font-family: 'Megrim', cursive;
+}
+
+.product-description {
+    width: 400px;
+    position: absolute;
+    top: -225px;
+    left: 100px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: calc(.8rem + .718vw);
+}
+
+.role-list {
+    position: absolute;
+    bottom: -30px;
+
+    .role-td-header {}
+
+    .role-td-header {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 20px;
+    }
+
+    .role-td {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: 'Pathway Gothic One', sans-serif;
+        color: lightgray;
+        letter-spacing: 1px;
+    }
+}
+
+.product-image {
+    position: relative;
+
+    img {
+        position: absolute;
+        right: -200px;
+        bottom: -40px;
+    }
+}
+
+.product-btn-wrapper {
+    .product-btn {
+        border-style: solid;
+        border-width: thin;
+        border-color: lightgray;
+        width: 130px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        bottom: -70px;
+        left: 31em;
+        background: white;
+        padding: 9px;
+        text-align: center;
+        box-shadow: inset 0 0 0 0 lightgray;
+        -webkit-transition: all ease 0.8s;
+        -moz-transition: all ease 0.8s;
+        transition: all ease 0.8s;
+    }
+
+    .product-btn:hover {
+        box-shadow: inset 0 100px 0 0 lightgray;
+        color: white;
+    }
+}
+
+.hide-project {
+    display: none;
+}
+
+.show-project {
+    display: inherit;
+}
+
 /****************
   Feveral Button
   **************/
