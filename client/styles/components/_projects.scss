@@ -49,10 +49,10 @@
   Page
 ****************/
 .project-container {
-    position: absolute;
-    top: 15vh;
+    position: fixed;
+    top: 17%;
     left: 6%;
-    width: 1200px;
+    width: 87%;
     height: 500px;
     border-style: solid;
     border-width: thin;
@@ -65,38 +65,190 @@
         margin-left: 7%;
 
         .header-title-small {
-            position: fixed;
-            top: 65px;
+            position: absolute;
+            top: -20.2em;
             border: solid;
             border-width: thin;
-            border-color: lightgray;
+            border-color: transparent;
             width: 130px;
             padding: 5px;
             background-color: white;
             text-align: center;
             font-family: 'Pathway Gothic One', sans-serif;
         }
+        /***************
+          Page
+        ****************/
+        .project-container {
+            position: fixed;
+            top: 17%;
+            left: 6%;
+            width: 87%;
+            height: 500px;
+            border-style: solid;
+            border-width: thin;
+            border-right-style: none;
+            border-color: lightgray;
+
+            .project-box {
+                position: absolute;
+                bottom: 10%;
+                margin-left: 7%;
+
+                .header-title-small {
+                    position: absolute;
+                    top: -20.2em;
+                    border: solid;
+                    border-width: thin;
+                    border-color: transparent;
+                    width: 130px;
+                    padding: 5px;
+                    background-color: white;
+                    text-align: center;
+                    font-family: 'Pathway Gothic One', sans-serif;
+                }
+
+                .header-title-large {
+                    position: absolute;
+                    top: -375px;
+                    font-size: 80px;
+                    font-family: 'Megrim', cursive;
+                }
+
+                .product-description {
+                    width: 400px;
+                    position: absolute;
+                    top: -225px;
+                    left: 100px;
+                    letter-spacing: 1px;
+                    font-family: 'Open Sans Condensed', sans-serif;
+                    font-size: calc(.8rem + .718vw);
+                }
+
+                .role-list {
+                    position: absolute;
+                    bottom: -30px;
+
+                    .role-td-header {}
+
+                    .role-td-header {
+                        margin-right: 20px;
+                        margin-left: 20px;
+                        font-family: 'Pathway Gothic One', sans-serif;
+                        font-size: 20px;
+                    }
+
+                    .role-td {
+                        margin-right: 20px;
+                        margin-left: 20px;
+                        font-family: 'Pathway Gothic One', sans-serif;
+                        color: lightgray;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .product-image {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        right: 100px;
+                        bottom: 30px;
+                    }
+                }
+
+                .product-btn-wrapper {
+                    .product-btn {
+                        border-style: solid;
+                        border-width: thin;
+                        border-color: lightgray;
+                        width: 130px;
+                        height: 40px;
+                        cursor: pointer;
+                        position: absolute;
+                        bottom: -70px;
+                        left: 31em;
+                        background: white;
+                        padding: 9px;
+                        text-align: center;
+                        box-shadow: inset 0 0 0 0 lightgray;
+                        -webkit-transition: all ease 0.8s;
+                        -moz-transition: all ease 0.8s;
+                        transition: all ease 0.8s;
+                    }
+
+                    .product-btn:hover {
+                        box-shadow: inset 0 100px 0 0 lightgray;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .hide-project {
+            display: none;
+        }
+
+        .show-project {
+            display: inherit;
+        }
+
+        .page-img {
+            height: auto !important;
+            width: 500px !important;
+        }
+        /****************
+          Feveral Button
+          **************/
+        .proj-btn-ani {
+            border-style: solid;
+            border-width: thin;
+            border-color: lightgray;
+            width: 130px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            bottom: -70px;
+            left: 31em;
+            background: white;
+            padding: 9px;
+            text-align: center;
+            box-shadow: inset 0 0 0 0 #000066 !important;
+            -webkit-transition: all ease 0.8s;
+            -moz-transition: all ease 0.8s;
+            transition: all ease 0.8s;
+        }
+
+        .proj-btn-ani:hover {
+            box-shadow: inset 0 100px 0 0 #000066 !important;
+            color: white;
+        }
+
+        .ani-blue {
+            box-shadow: inset 0 100px 0 0 #000066 !important;
+            color: white;
+        }
 
         .header-title-large {
-            position: fixed;
-            top: 30%;
+            position: absolute;
+            top: -375px;
             font-size: 80px;
             font-family: 'Megrim', cursive;
         }
 
         .product-description {
             width: 400px;
-            position: fixed;
-            top: 50%;
-            left: 16%;
+            position: absolute;
+            top: -225px;
+            left: 100px;
             letter-spacing: 1px;
             font-family: 'Open Sans Condensed', sans-serif;
             font-size: calc(.8rem + .718vw);
         }
 
         .role-list {
-            position: relative;
-            top: 40px;
+            position: absolute;
+            bottom: -30px;
 
             .role-td-header {}
 
@@ -121,8 +273,8 @@
 
             img {
                 position: absolute;
-                right: -95vh;
-                top: -55vh;
+                right: 100px;
+                bottom: 30px;
             }
         }
 
@@ -134,32 +286,128 @@
                 width: 130px;
                 height: 40px;
                 cursor: pointer;
-                position: fixed;
-                bottom: 8%;
-                left: 45%;
+                position: absolute;
+                bottom: -70px;
+                left: 31em;
                 background: white;
                 padding: 9px;
                 text-align: center;
-                box-shadow: inset 0 0 0 0 black;
+                box-shadow: inset 0 0 0 0 lightgray;
                 -webkit-transition: all ease 0.8s;
                 -moz-transition: all ease 0.8s;
                 transition: all ease 0.8s;
             }
+
             .product-btn:hover {
-                box-shadow: inset 0 100px 0 0 black;
+                box-shadow: inset 0 100px 0 0 lightgray;
                 color: white;
             }
-
         }
     }
 }
 
 .hide-project {
-  display: none;
+    display: none;
 }
-.show-project {
-  display: inherit;
-}
-#fever {
 
+.show-project {
+    display: inherit;
+}
+
+.page-img {
+    height: auto !important;
+    width: 500px !important;
+}
+/****************
+  Feveral Button
+  **************/
+.proj-btn-ani-yellow {
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    left: 31em;
+    background: white;
+    padding: 9px;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #FFCC00 !important;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+.proj-btn-ani-yellow:hover {
+    box-shadow: inset 0 100px 0 0 #FFCC00 !important;
+    color: white;
+}
+
+.ani-yellow {
+    box-shadow: inset 0 100px 0 0 #FFCC00 !important;
+    color: white;
+}
+/****************
+  Nice Button
+  **************/
+.proj-btn-ani-brown {
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    left: 31em;
+    background: white;
+    padding: 9px;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #6A6A5A !important;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+.proj-btn-ani-brown:hover {
+    box-shadow: inset 0 100px 0 0 #6A6A5A !important;
+    color: white;
+}
+
+.ani-brown {
+    box-shadow: inset 0 100px 0 0 #6A6A5A !important;
+    color: white;
+}
+/****************
+  Wine Button
+  **************/
+.proj-btn-ani-lightbrown {
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -70px;
+    left: 31em;
+    background: white;
+    padding: 9px;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #CCCC99 !important;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+
+.proj-btn-ani-lightbrown:hover {
+    box-shadow: inset 0 100px 0 0 #CCCC99 !important;
+    color: white;
+}
+
+.ani-lightbrown {
+    box-shadow: inset 0 100px 0 0 #CCCC99 !important;
+    color: white;
 }

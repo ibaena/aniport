@@ -8,15 +8,15 @@
 
     .pagenav-list {
         list-style-type: none;
-        position: absolute;
-        top: 43vh;
-        left: 38px;
+        position: fixed;
+        top: 330px;
+        left: 57px;
         z-index: 1;
         border-style: solid;
         border-width: thin;
-        border-color: lightgray;
+        border-color: transparent;
         border-radius: 10px;
-        padding: 3px;
+        padding: 4px;
         background: white;
 
         .pagenav-list-item {}

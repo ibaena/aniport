@@ -10,6 +10,22 @@ Landing = React.createClass({
     $(window).on('scroll', function() {
       $('.landing-bg').removeClass('slideUpReturn');
       $('.landing-bg').addClass('slideUp');
+
+      setTimeout(function(){  //load 1st slide
+        $('.project-box').find('#fever').removeClass('hide-project');
+        $('.project-box').find('#amloid').addClass('hide-project');
+        $('.project-box').find('#nice').addClass('hide-project');
+        $('.project-box').find('#wine').addClass('hide-project');
+
+        $('.intro-up').addClass('animated fadeIn');
+        $('.page-img').addClass('slideInRight');
+        $('.product-btn').addClass('proj-btn-ani ani-blue');          //button
+        setTimeout(function(){
+          $('.product-btn').removeClass('ani-blue');
+        },0700);
+        $("#fever").prop("checked", true);
+      }, 0500);
+
     });
   },
   render(){
