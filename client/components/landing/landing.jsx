@@ -16,7 +16,7 @@ Landing = React.createClass({
         $('.project-box').find('#amloid').addClass('hide-project');
         $('.project-box').find('#nice').addClass('hide-project');
         $('.project-box').find('#wine').addClass('hide-project');
-        $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
+
 
         $('.pagenav-list').removeClass('border-dark');
         $('.intro-up').addClass('animated fadeIn');

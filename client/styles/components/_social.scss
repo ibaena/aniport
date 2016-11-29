@@ -1,14 +1,11 @@
 .nonvis {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 .social-bg {
     height: 100vh;
     width: 100%;
     background-color: #1b1a25;
-    background-image: url('images/nyc.jpg');
-    background-size: cover;
-
-
 
     #social-overlay {
         position: absolute;

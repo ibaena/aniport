@@ -18,6 +18,7 @@ Pagenav = React.createClass({
             if (that === "home") {
               $('.landing-bg').removeClass('slideUp');
               $('.landing-bg').addClass('slideUpReturn');
+              $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
 
               setTimeout(function(){
                   $('#'+that).prop('checked', false)
@@ -91,7 +92,8 @@ Pagenav = React.createClass({
               $('.project-box').find('#nice').addClass('hide-project');
               $('.project-box').find('#wine').addClass('hide-project');
 
-              $('.social-bg').removeClass('hide-project animated slideOutDown').addClass('animated slideInUp');
+              $('.social-bg').removeClass('hide-project animated slideOutDown');
+              $('.social-bg').addClass('animated slideInUp');
               setTimeout(function(){
                   $('.pagenav-list').addClass('border-dark');
               },0300);
