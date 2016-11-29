@@ -99,7 +99,7 @@ Pagenav = React.createClass({
     var links = this.nav.map(function(item){
       return (
         <li className="pagenav-list-item" key={item._id}>
-          <input type="radio" className="radio-nav" id={item.class_id} value={item.name} name="page-nav"/>
+          <input type="radio" className="radio-nav" id={item.class_id} value={item.name_large} name="page-nav"/>
         </li>
       )
     });

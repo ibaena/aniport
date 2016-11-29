@@ -9,6 +9,7 @@ Social = React.createClass({
         <div id="social-overlay"></div>
         <div className="container-fluid no-padding landing-zdex" >
         <div className="social-box"></div>
+
           <div className="one-third circle">Content</div>
           <div className="one-third circle">Content</div>
           <div className="one-third circle">Content</div>
