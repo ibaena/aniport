@@ -22,10 +22,11 @@
 
     .social-box {
         position: fixed;
-        top: 24vh;
+        top: 8vh;
         left: 100px;
-        height: 500px;
-        width: 87%;
+        width: 89%;
+        height: 85%;
+        max-height: 100vh;
         border-style: solid;
         border-color: lightgrey;
         border-width: thin;
@@ -35,10 +36,10 @@
 .one-third {
     position: relative;
     color: white !important;
-    top: 31vh;
-    left: 22vh;
+    top: 26vh;
+    left: 28vh;
     float: left;
-    margin: 50px;
+    margin: 10vh;
     padding: 100px;
     width: 250px;
     height: 250px;
