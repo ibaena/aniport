@@ -10,14 +10,14 @@ Landing = React.createClass({
     $(window).on('scroll', function() {
       $('.landing-bg').removeClass('slideUpReturn');
       $('.landing-bg').addClass('slideUp');
-
+      $('.pagenav-list').removeClass('border-dark');
 
       setTimeout(function(){  //load 1st slide
         $('.project-box').find('#fever').removeClass('hide-project');
         $('.project-box').find('#amloid').addClass('hide-project');
         $('.project-box').find('#nice').addClass('hide-project');
         $('.project-box').find('#wine').addClass('hide-project');
-        $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
+
         $("#fever").prop("checked", true);
         $('.intro-up').addClass('animated fadeIn');
         $('.page-img').addClass('slideInRight');

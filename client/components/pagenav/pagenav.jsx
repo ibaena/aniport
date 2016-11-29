@@ -11,6 +11,7 @@ Pagenav = React.createClass({
     {_id:'5', class_id:'social', name_small:'Social', name_large:'SOCIAL'},
   ],
   componentDidMount(){
+    $('.social-bg').addClass('hide-project'); // set initial state
     $('input:radio').change(
         function(){
           let that = this.id;
@@ -22,7 +23,7 @@ Pagenav = React.createClass({
 
               setTimeout(function(){
                   $('#'+that).prop('checked', false)
-
+                  $('.social-bg').addClass('hide-project');
               },1000)
             }else if (that === "fever") {
               $('.project-box').find('#amloid').addClass('hide-project'); //hide previous
