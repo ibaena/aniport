@@ -33,6 +33,7 @@ Pagenav = React.createClass({
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
+              $('.btn-nav').removeClass('border-dark');
               $('.project-box').find('#fever').removeClass('hide-project'); //show page
               $('.intro-up').addClass('animated fadeIn');                   //text
               $('.product-btn').removeClass('proj-btn-ani-yellow proj-btn-ani-brown proj-btn-ani-lightbrown').addClass('proj-btn-ani ani-blue');          //button
@@ -47,6 +48,7 @@ Pagenav = React.createClass({
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
+              $('.btn-nav').removeClass('border-dark');
               $('.project-box').find('#amloid').removeClass('hide-project');
               $('.page-img').addClass('slideInRight');
               $('.intro-up').addClass('animated fadeIn');
@@ -63,6 +65,7 @@ Pagenav = React.createClass({
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
+              $('.btn-nav').removeClass('border-dark');
               $('.project-box').find('#nice').removeClass('hide-project');
               $('.page-img').addClass('slideInRight');
               $('.intro-up').addClass('animated fadeIn');
@@ -78,6 +81,7 @@ Pagenav = React.createClass({
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
+              $('.btn-nav').removeClass('border-dark');
               $('.project-box').find('#wine').removeClass('hide-project');
               $('.page-img').addClass('slideInRight');
               $('.intro-up').addClass('animated fadeIn');
@@ -91,6 +95,7 @@ Pagenav = React.createClass({
               $('.social-bg').addClass('magictime slideDownReturn');
               setTimeout(function(){
                   $('.pagenav-list').addClass('border-dark');
+                  $('.btn-nav').addClass('border-dark');
               },0300);
             }
         });
