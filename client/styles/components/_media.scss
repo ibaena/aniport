@@ -32,12 +32,20 @@
     }
 
     .pagenav-list {
-        top: 320px !important;
-        left: 36px !important;
+        top: 40vh !important;
+        left: 6vh !important;
     }
     .text-box {
       top:40vw;
       left: 45vh;
+    }
+    .social-box {
+        left: 7.2vh !important;
+        width: 89% !important;
+    }
+    .project-container {
+        width: 83% !important;
+        left: 9.1vh !important;
     }
 }
 /******************
@@ -61,8 +69,8 @@
     }
 
     .pagenav-list {
-        top: 320px !important;
-        left: 51px !important;
+        top: 40vh !important;
+        left: 6vh !important;
     }
     .text-box {
         top: 35vw;
@@ -72,6 +80,14 @@
         position: absolute;
         right: -30vh !important;
         bottom: -10vh !important;
+    }
+    .social-box {
+        left: 7.3vh !important;
+        width: 91% !important;
+    }
+    .project-container {
+        left: 9vh !important;
+        width: 86% !important;
     }
 }
 /*******************
@@ -89,8 +105,8 @@
         top: -69vh !important;
     }
     .pagenav-list {
-        top: 310px !important;
-        left: 58px !important;
+        top: 42vh !important;
+        left: 6vh !important;
     }
 
     .product-description {
@@ -109,8 +125,13 @@
 
     }
     .social-box {
-      top: 18vh !important;
-      left: 10vh !important;
+        top: 8vh !important;
+        left: 7.2vh !important;
+        width: 91.8% !important;
+    }
+    .project-container {
+        left: 9vh !important;
+        width: 86% !important;
     }
 }
 /*******************
@@ -127,7 +148,7 @@
 
     .pagenav-list {
         top: 43vh !important;
-        left: 6.9vh !important;
+        left: 5vh !important;
     }
 
     .product-description {
@@ -143,6 +164,15 @@
         position: absolute;
         right: -25vh !important;
         bottom: -4vh !important;
+    }
+    .social-box {
+        left: 6.1vh !important;
+        width: 92.2% !important;
+        top: 7vh !important;
+    }
+    .project-container {
+        left: 7.8vh !important;
+        width: 86% !important;
     }
 }
 /*******************
@@ -168,12 +198,14 @@
     }
 
     .pagenav-list {
-        top: 390px !important;
-        left: 71px !important;
+        top: 44vh !important;
+        left: 5vh !important;
     }
 
     .project-container {
-        top: 8vh;
+        top: 8vh !important;
+        left: 7.8vh !important;
+        width: 87% !important;
     }
     .page-img {
         position: absolute;
@@ -181,6 +213,12 @@
         bottom: -6vh !important;
         width:850px;
     }
+    .social-box {
+        left: 6.1vh !important;
+        width: 93% !important;
+        top: 7vh !important;
+    }
+
 }
 /*******************
   22" screen 1680px
@@ -206,11 +244,13 @@
 
     .pagenav-list {
         top: 44vh !important;
-        left: 7.15vh !important;
+        left: 4.5vh !important;
     }
 
     .project-container {
-        top: 8vh;
+        top: 6.5vh !important;
+        left: 6.8vh !important;
+        width: 87%;
     }
     .text-box {
         top: 35vw;
@@ -221,6 +261,11 @@
       right: -30vh !important;
       bottom: -8vh !important;
       width: 1000px;
+    }
+    .social-box {
+        left: 5.4vh !important;
+        top: 6vh !important;
+        width: 93.4% !important;
     }
 }
 /*************************
@@ -245,21 +290,27 @@
     }
 
     .pagenav-list {
-        top: 435px !important;
-        left: 90px !important;
+        top: 25vw !important;
+        left: 4vw !important;
     }
 
     .project-container {
-        top: 8vh;
+        top: 4vw !important;
+        left: 5.3vw !important;
     }
     .text-box {
-        top: 31vw;
-        left: 95vh;
+        top: 31vw !important;
+        left: 95vh !important;
     }
     .page-img {
         position: absolute;
-        right: -24vh !important;
+        right: -29vh !important;
         bottom: -5vh !important;
-        width: 950px !important;
+        width: 1000px !important;
+    }
+    .social-box {
+        left: 4.5vw !important;
+        top: 3.5vw !important;
+        width: 92.5% !important;
     }
 }
