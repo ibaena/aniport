@@ -20,6 +20,7 @@ Pagenav = React.createClass({
               $('.landing-bg').removeClass('slideUp');
               $('.landing-bg').addClass('slideUpReturn');
               $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
+              $('.btn-nav').removeClass('border-dark');
 
               setTimeout(function(){
                   $('#'+that).prop('checked', false)
