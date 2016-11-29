@@ -18,17 +18,17 @@ Pagenav = React.createClass({
             if (that === "home") {
               $('.landing-bg').removeClass('slideUp');
               $('.landing-bg').addClass('slideUpReturn');
-              $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
+              $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
 
               setTimeout(function(){
                   $('#'+that).prop('checked', false)
-                  $('.pagenav-list').removeClass('border-dark');
+
               },1000)
             }else if (that === "fever") {
               $('.project-box').find('#amloid').addClass('hide-project'); //hide previous
               $('.project-box').find('#nice').addClass('hide-project');
               $('.project-box').find('#wine').addClass('hide-project');
-              $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
+              $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
@@ -42,8 +42,7 @@ Pagenav = React.createClass({
               $('.project-box').find('#fever').addClass('hide-project');
               $('.project-box').find('#nice').addClass('hide-project');
               $('.project-box').find('#wine').addClass('hide-project');
-              $('.pagenav-list').removeClass('border-dark');
-              $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
+              $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
@@ -59,7 +58,7 @@ Pagenav = React.createClass({
               $('.project-box').find('#amloid').addClass('hide-project');
               $('.project-box').find('#wine').addClass('hide-project');
               $('.pagenav-list').removeClass('border-dark');
-              $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
+              $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
@@ -74,8 +73,7 @@ Pagenav = React.createClass({
               $('.project-box').find('#fever').addClass('hide-project');
               $('.project-box').find('#amloid').addClass('hide-project');
               $('.project-box').find('#nice').addClass('hide-project');
-              $('.social-bg').removeClass('animated slideInUp').addClass('animated slideOutDown');
-              $('.pagenav-list').removeClass('border-dark');
+              $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
 
             setTimeout(function(){
               $('.pagenav-list').removeClass('border-dark');
@@ -87,13 +85,9 @@ Pagenav = React.createClass({
                 $('.product-btn').removeClass('ani-lightbrown');
               },0700);},0400);
             }else if (that === "social") {
-              $('.project-box').find('#fever').addClass('hide-project');
-              $('.project-box').find('#amloid').addClass('hide-project');
-              $('.project-box').find('#nice').addClass('hide-project');
-              $('.project-box').find('#wine').addClass('hide-project');
 
-              $('.social-bg').removeClass('hide-project animated slideOutDown');
-              $('.social-bg').addClass('animated slideInUp');
+              $('.social-bg').removeClass('hide-project magictime slideDown');
+              $('.social-bg').addClass('magictime slideDownReturn');
               setTimeout(function(){
                   $('.pagenav-list').addClass('border-dark');
               },0300);

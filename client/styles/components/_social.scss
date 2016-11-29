@@ -3,40 +3,38 @@
 }
 
 .social-bg {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: #312d31;
+  position: absolute;
+}
+
+#social-overlay {
+    position: absolute;
     height: 100vh;
     width: 100%;
-    background-color: #1b1a25;
-    background-image: url('images/nyc.jpg');
-    background-size: cover;
+    background: rgba(24, 23, 35, 0.7);
+}
 
+.landing-zdex {
+    position: absolute;
 
-    #social-overlay {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        background: rgba(24, 23, 35, 0.7);
-    }
-
-    .landing-zdex {
-        position: absolute;
-
-        .social-box {
-            position: fixed;
-            top: 24vh;
-            left: 100px;
-            height: 500px;
-            width: 87%;
-            border-style: solid;
-            border-color: lightgrey;
-            border-width: thin;
-
-        }
+    .social-box {
+        position: fixed;
+        top: 24vh;
+        left: 100px;
+        height: 500px;
+        width: 87%;
+        border-style: solid;
+        border-color: lightgrey;
+        border-width: thin;
     }
 }
+
 .one-third {
     position: absolute;
     color: white !important;
     top: 35vh;
     left: 40vh;
-
 }
