@@ -7,7 +7,7 @@ Landing = React.createClass({
     //preload
     $('.intro-one-text , .intro-two-text').hide();
     setTimeout(function(){
-      $('.side-list-landing').animate({left: '1vh'}, 'slow');
+      $('.side-list-landing').animate({left: '1vh'}, 0700);
     },2500);
     setTimeout(function(){
       $('.intro-one-text , .intro-two-text').show();
@@ -15,8 +15,6 @@ Landing = React.createClass({
     },300);
 
 
-    $('.btn-nav').addClass('button_sliding_bg_2  btn-border');
-    $('.bar').addClass('btn-border');
     setTimeout(function(){
       $('.bar').removeClass('btn-border');
       $('.btn-nav').removeClass('button_sliding_bg_2 btn-border');

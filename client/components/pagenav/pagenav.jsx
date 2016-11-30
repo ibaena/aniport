@@ -42,6 +42,8 @@ Pagenav = React.createClass({
                     $('.project-box').find('#fever').removeClass('hide-project'); //show page
                     $('.intro-up').addClass('animated fadeIn'); //text
                     $('.product-btn').removeClass('proj-btn-ani-yellow proj-btn-ani-brown proj-btn-ani-lightbrown').addClass('proj-btn-ani ani-blue'); //button
+                    $('.btn-nav').removeClass('button_sliding_bg button_sliding_bg_2').addClass('ani-blue ani-blue-hover');
+
                     setTimeout(function() {
                         $('.product-btn').removeClass('ani-blue');
                     }, 0700);

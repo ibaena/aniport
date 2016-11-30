@@ -199,7 +199,10 @@
     box-shadow: inset 0 100px 0 0 #000066 !important;
     color: white;
 }
-
+.ani-blue-hover {
+    box-shadow: inset 0 0 0 0 #000066 !important;
+    color: white;
+}
 .header-title-large {
     position: absolute;
     top: -375px;
@@ -310,6 +313,10 @@
 
 .ani-yellow {
     box-shadow: inset 0 100px 0 0 #FFCC00 !important;
+    color: white;
+}
+.ani-yellow-hover {
+    box-shadow: inset 0 0 0 0 #FFCC00 !important;
     color: white;
 }
 /****************
