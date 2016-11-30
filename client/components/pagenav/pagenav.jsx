@@ -17,19 +17,13 @@ Pagenav = React.createClass({
             let that = this.id;
 
             if (that === "home") {
-<<<<<<< HEAD
+
                 $('#update').show();
                 $('.landing-bg').removeClass('slideUp');
                 $('.landing-bg').addClass('slideUpReturn');
                 $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
                 $('.product-btn').removeClass('proj-btn-ani-yellow proj-btn-ani-brown proj-btn-ani-lightbrown proj-btn-ani ani-blue');
                 $('.btn-nav').removeClass('border-dark');
-=======
-              $('.landing-bg').removeClass('slideUp');
-              $('.landing-bg').addClass('slideUpReturn');
-              $('.social-bg').removeClass('magictime slideDownReturn').addClass('magictime slideDown');
-              $('.btn-nav').removeClass('border-dark');
->>>>>>> dcf3616869541ca70f5789288aaa04659984ce2f
 
                 setTimeout(function() {
                     $('#' + that).prop('checked', false)
