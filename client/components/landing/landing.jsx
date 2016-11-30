@@ -4,10 +4,26 @@ import { mount } from 'react-mounter';
 Landing = React.createClass({
 
   componentDidMount(){
+    //preload
+    $('.intro-one-text , .intro-two-text').hide();
     setTimeout(function(){
-      $('.landing-img-logo').toggleClass('hide-nav-bg animated slideInLeft');
-    }, 1200);
+      $('.side-list-landing').animate({left: '1vh'}, 'slow');
+    },2500);
+    setTimeout(function(){
+      $('.intro-one-text , .intro-two-text').show();
+      $('.intro-one-text , .intro-two-text').toggleClass('c-ani fadeInUp');
+    },300);
+
+
+    $('.btn-nav').addClass('button_sliding_bg_2  btn-border');
+    $('.bar').addClass('btn-border');
+    setTimeout(function(){
+      $('.bar').removeClass('btn-border');
+      $('.btn-nav').removeClass('button_sliding_bg_2 btn-border');
+    }, 1600);
+
     $(window).on('scroll', function() {
+      $('#update').hide();
       $('.landing-bg').removeClass('slideUpReturn');
       $('.landing-bg').addClass('slideUp');
       $('.pagenav-list').removeClass('border-dark');
@@ -44,8 +60,8 @@ Landing = React.createClass({
             <li className="side-list-last">Ivan Baena</li>
           </ul>
           <div className="text-box">
-            <div className="intro-one"><p className="intro-one-text"><span className="highlight-text">I’M A WEB DEVELOPER</span>  from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group. With web development, my strength lies in the Front End of website and app development.</p></div>
-            <div className="intro-two"><p className="intro-two-text">If you want to know more about me, my work or if youʼre an Elder Scrolls Skyrim or want to talk Knicks basketball, feel free to contact me on ivan.baena04 [at] gmail.com.</p></div>
+            <div className="intro-one "><p className="intro-one-text"><span className="highlight-text">I’M A WEB DEVELOPER</span>  from Pennsylvania living in Hoboken, New Jesery, where I work as a Front End Developer at Vision Creative Group. With web development, my strength lies in the Front End of website and app development.</p></div>
+            <div className="intro-two "><p className="intro-two-text">If you want to know more about me, my work or if youʼre an Elder Scrolls Skyrim or want to talk Knicks basketball, feel free to contact me on ivan.baena04 [at] gmail.com.</p></div>
           </div>
           <div className="logo">
             <img src="images/nav/ivan-logo.png" className="landing-img-logo hide-nav-bg" />

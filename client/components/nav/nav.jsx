@@ -16,6 +16,7 @@ Nav = React.createClass({
     {_id:'3', name:'IVANBAENA04 [AT] GMAIL.COM', link:'ivan.baena04@gmail.com'},
   ],
   componentDidMount(){
+
     $('#nav-wrapper').hide();
     $('#nav-btn').on('click',function() {
       $('#nav-wrapper').show();
@@ -75,10 +76,11 @@ Nav = React.createClass({
     });
     return (
       <div>
-        <btn className="btn-nav btn-square-fixed button_sliding_bg" id="nav-btn">
-          <div className="bar bar-top"></div>
-          <div className="bar bar-mid"></div>
-          <div className="bar bar-bot"></div>
+        <div id="update"><span id="update-text">Last Update:</span> <span id="update-date">November 2016</span></div>
+        <btn className="btn-nav btn-square-fixed button_sliding_bg button_sliding_bg_2 btn-border" id="nav-btn">
+          <div className="bar bar-top btn-border"></div>
+          <div className="bar bar-mid btn-border"></div>
+          <div className="bar bar-bot btn-border"></div>
         </btn>
         <div id="nav-wrapper" className="container-fluid no-padding animated slideOutUp">
           <ul className="navlist vcenter col-xs-12 hide-nav-bg">

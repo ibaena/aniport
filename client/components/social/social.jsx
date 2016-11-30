@@ -5,7 +5,7 @@ Social = React.createClass({
   render(){
     return (
       <div className="social-bg">
-
+        <div className="social-image-bg"></div>
         <div id="social-overlay"></div>
         <div className="container-fluid no-padding landing-zdex" >
         <div className="social-box"></div>

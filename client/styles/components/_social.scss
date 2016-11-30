@@ -8,6 +8,8 @@
     margin: 0;
     background-color: #312d31;
     position: absolute;
+    background-image: url('images/nyc.jpg');
+    background-size: cover;
 }
 
 #social-overlay {
@@ -36,13 +38,13 @@
 .one-third {
     position: relative;
     color: white !important;
-    top: 26vh;
-    left: 7.6vh;
+    top: 25vh;
+    left: 24.5vh;
     float: left;
     margin: 10vh;
     padding: 10vh;
-    width: 27vh;
-    height: 25vh;
+    width: 30vh;
+    height: 28vh;
     border-style: solid;
     border-width: thin;
     border-color: lightgrey;
@@ -50,11 +52,11 @@
 }
 
 .circle {
-    border-radius: 0;
+    border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
 
 .circle:hover {
-    border-radius: 50%;
+    border-radius: 0%;
     cursor: pointer;
 }
