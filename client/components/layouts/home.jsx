@@ -7,6 +7,7 @@ Homelayout = React.createClass({
       <div >
         <Nav />
         <div className="container-fluid no-padding" id="container-home">
+          <Preloader />
           <Landing />
           <Projects />
           <Social />
