@@ -12,8 +12,8 @@ publicRoutes.route('/',{
     mount(Homelayout,{})
   }
 });
-publicRoutes.route('/amloid',{
-  name:'Amloid',
+publicRoutes.route('/:id',{
+  name:'Feverall',
   action(){
     mount(Projectlayout,{})
   }

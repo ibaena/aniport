@@ -6,8 +6,8 @@ Nav = React.createClass({
     {_id:'0',name:'Home', src:'/', background:'images/nav/ivan-stencil.png', class:'nav-bg-home hide-nav-bg animated home-nav-img ', color:'', elementId: 'home-bg' },
     {_id:'1',name:'Amloid Toys', src:'/amloid', background:'images/nav/bothamloid.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
     {_id:'2',name:'Feverall', src:'/feverall', background:'images/nav/feverthree.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
-    {_id:'3',name:'Nice n Clean', src:'#', background:'images/nav/nicencleanboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
-    {_id:'4',name:'Wine 4 Food', src:'#', background:'images/nav/wineboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'3',name:'Nice n Clean', src:'/nicenclean', background:'images/nav/nicencleanboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'4',name:'Wine 4 Food', src:'/wine4food', background:'images/nav/wineboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
   ],
   contact:[
     {_id:'0', name:'TWITTER', link:'https://twitter.com/NotThefakeIB'},
@@ -29,12 +29,12 @@ Nav = React.createClass({
 
     $('.nav-link').on('click tap', function(){
       var href = $(this).attr('href');
-
+      $('#nav-wrapper').show();
       $('#nav-wrapper').toggleClass('slideOutUp slideInDown')
-        setTimeout(function(){
+
           $('.navlist').toggleClass('hide-nav-bg fadeIn');
           $('.contactlist').toggleClass('hide-nav-bg fadeIn');
-        }, 0600);
+  ;
     });
 
     $(".btn-nav").on("click tap", function(){
