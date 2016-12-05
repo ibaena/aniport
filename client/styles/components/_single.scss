@@ -10,12 +10,20 @@
             position: absolute;
             left: 0;
             top: 0;
-
             height: 100vh;
             width: calc(50%);
 
             .content-left-side {
                 width: 100%;
+                position: relative;
+                top: 15%;
+                right: 25%;
+
+                .single-img {
+                    width: 720px;
+                    position: absolute;
+
+                }
             }
         }
 
@@ -31,19 +39,21 @@
         }
     }
 }
-
 /************
   Bg Colors
 ************/
 #blue-single {
-  background-color: blue;
+    background-color: blue;
 }
+
 #yellow-single {
-  background-color: yellow;
+    background-color: yellow;
 }
+
 #green-single {
-  background-color: green;
+    background-color: green;
 }
+
 #red-single {
-  background-color: red;
+    background-color: red;
 }

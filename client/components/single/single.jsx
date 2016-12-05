@@ -4,10 +4,10 @@ import { Session } from 'meteor/session'
 
 Single = React.createClass({
   projects:[
-    {_id:'0', name:'feverall', upper:"Feverall", bg:'blue-single'},
-    {_id:'1', name:'amloid', upper:"Feverall", bg:'yellow-single'},
-    {_id:'2', name:'nicenclean', upper:"Feverall", bg:'green-single'},
-    {_id:'3', name:'wine4food', upper:"Feverall", bg:'red-single'}
+    {_id:'0', name:'feverall', upper:"Feverall", bg:'blue-single', image:'images/nav/feverthree.png'},
+    {_id:'1', name:'amloid', upper:"Feverall", bg:'yellow-single', image:'images/nav/bothamloid.png'},
+    {_id:'2', name:'nicenclean', upper:"Feverall", bg:'green-single', image:'images/nav/niceboth.png'},
+    {_id:'3', name:'wine4food', upper:"Feverall", bg:'red-single', image:'images/nav/wineboth.png'}
   ],
   componentDidMount(){
     setTimeout(function(){
@@ -19,6 +19,10 @@ Single = React.createClass({
         $('.single-bg').find('#blue-single').removeClass('hide-project').addClass('animated slideInLeft ');
       }else if(pathname === '/amloid'){
         $('.single-bg').find('#yellow-single').removeClass('hide-project').addClass('animated slideInLeft ');
+          let singleImg = $('.single-bg').find('.project-left-side').find('.content-left-side').find('#amloid-single');
+          $(singleImg).removeClass('hide-projct');
+
+
       }
       else if(pathname === '/nicenclean'){
         $('.single-bg').find('#green-single').removeClass('hide-project').addClass('animated slideInLeft ');
@@ -68,11 +72,10 @@ Single = React.createClass({
       <div key={item._id}>
         <div className="project-left-side hide-project" id={item.bg}>
           <div className="content-left-side">
-
+            <img className="single-img hide-project" id={item.name+"-single"} src={item.image} alt="{item.name}" />
           </div>
         </div>
         <div className="project-right-side">
-
           <div className="content-right-side">
 
           </div>
