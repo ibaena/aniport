@@ -35,7 +35,28 @@
             height: 100vh;
             width: calc(50%);
 
-            .content-right-side {}
+            .content-right-side {
+
+              .project-section-title {
+                position: absolute;
+                top: 20%;
+                left: 100px;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: calc(5vw + 20px)
+              }
+              .project-section-content {
+                position: absolute;
+                top: 42%;
+                left: 100px;
+                font-family: 'Pathway Gothic One', sans-serif;
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 30px;
+                width: 480px;
+                text-align: justify;
+
+              }
+            }
         }
     }
 }
