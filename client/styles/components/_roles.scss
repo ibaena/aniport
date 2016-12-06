@@ -1,0 +1,17 @@
+/*****************
+  Roles Styles
+*****************/
+.roles-bg {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-image: url('images/roles/lightpaperfibers.png');
+    background-size: contain;
+
+    .role-component-list {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        width: 1000px;
+    }
+}

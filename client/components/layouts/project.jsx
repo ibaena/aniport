@@ -8,6 +8,7 @@ Projectlayout = React.createClass({
         <Nav />
         <div className="">
             <Single />
+            <Roles />
         </div>
       </div>
     )
