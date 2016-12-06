@@ -1,28 +1,27 @@
 import React from 'react';
 import { mount } from 'react-mounter';
-import { Session } from 'meteor/session'
+import { Session } from 'meteor/session';
 
 Single = React.createClass({
   projects:[
-    {_id:'0', name:'feverall', upper:"Feverall", bg:'blue-single', image:'images/nav/feverthree.png'},
-    {_id:'1', name:'amloid', upper:"Feverall", bg:'yellow-single', image:'images/nav/bothamloid.png'},
-    {_id:'2', name:'nicenclean', upper:"Feverall", bg:'green-single', image:'images/nav/niceboth.png'},
-    {_id:'3', name:'wine4food', upper:"Feverall", bg:'red-single', image:'images/nav/wineboth.png'}
+    {_id:'0', name:'feverall', upper:"Feverall", bg:'blue-single', image:'images/nav/feverthree.png', large_header:'FEVERALL', description:'BLAH '},
+    {_id:'1', name:'amloid', upper:"Amloid", bg:'yellow-single', image:'images/nav/bothamloid.png', large_header:'AMLOID', description:'BLAH'},
+    {_id:'2', name:'nicenclean', upper:"Nice N Clean", bg:'green-single', image:'images/nav/nicencleanboth.png', large_header:'NICE N CLEAN', description:'BLAH '},
+    {_id:'3', name:'wine4food', upper:"Wine4Food", bg:'red-single', image:'images/nav/wineboth.png', large_header:'WINE4FOOD', description:'BLAH'},
   ],
   componentDidMount(){
     setTimeout(function(){
-      var pathname = window.location.pathname;
-      console.log(pathname);
+      let pathname = window.location.pathname;
 
       if(pathname === '/feverall'){
+        $('.single-bg').find('#blue-single').removeClass('hide-project').addClass('animated slideInLeft ').promise().done(function(){
 
-        $('.single-bg').find('#blue-single').removeClass('hide-project').addClass('animated slideInLeft ');
+        });
       }else if(pathname === '/amloid'){
-        $('.single-bg').find('#yellow-single').removeClass('hide-project').addClass('animated slideInLeft ');
-          let singleImg = $('.single-bg').find('.project-left-side').find('.content-left-side').find('#amloid-single');
-          $(singleImg).removeClass('hide-projct');
+        $(feverImg).addClass('hide-project');
+        $('.single-bg').find('#yellow-single').removeClass('hide-project').addClass('animated slideInLeft ').promise().done(function(){
 
-
+        });
       }
       else if(pathname === '/nicenclean'){
         $('.single-bg').find('#green-single').removeClass('hide-project').addClass('animated slideInLeft ');
@@ -72,7 +71,7 @@ Single = React.createClass({
       <div key={item._id}>
         <div className="project-left-side hide-project" id={item.bg}>
           <div className="content-left-side">
-            <img className="single-img hide-project" id={item.name+"-single"} src={item.image} alt="{item.name}" />
+            <img className="single-img" id={item.name+"-single"} src={item.image} alt={item.name} />
           </div>
         </div>
         <div className="project-right-side">

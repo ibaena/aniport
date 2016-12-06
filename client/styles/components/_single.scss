@@ -43,17 +43,25 @@
   Bg Colors
 ************/
 #blue-single {
-    background-color: blue;
+  background-image: url('images/projects/feverall-proj-bg.png');
+  background-size: cover;
+  background-position: -12%;
 }
 
 #yellow-single {
-    background-color: yellow;
+    background-image: url('images/projects/amloid-proj-bg.png');
+    background-size: cover;
+    background-position: 100%;
 }
 
 #green-single {
-    background-color: green;
+  background-image: url('images/projects/nicenclean-proj-bg.png');
+  background-size: cover;
+  background-position: 100%;
 }
 
 #red-single {
-    background-color: red;
+  background-image: url('images/projects/wine4food-proj-bg.png');
+  background-size: cover;
+  background-position: -20%;
 }
