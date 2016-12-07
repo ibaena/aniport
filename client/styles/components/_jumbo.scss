@@ -1,0 +1,39 @@
+/****************
+  Jumbo Styles
+****************/
+.jumbo-bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+
+    .pallet {
+
+        height: 100%;
+        position: relative;
+        top: 40vh;
+    }
+    #feverall-screen {
+      background-image: url("images/screens/fever_screen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+    #amloid-screen {
+      background-image: url("images/screens/amloid_screen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+    #nicenclean-screen {
+      background-image: url("images/screens/nice_screen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+    #wine4food-screen {
+      background-image: url("images/screens/wine_screen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+}

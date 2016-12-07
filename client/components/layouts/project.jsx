@@ -9,6 +9,7 @@ Projectlayout = React.createClass({
         <div className="">
             <Single />
             <Roles />
+            <Jumbo />
         </div>
       </div>
     )
