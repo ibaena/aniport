@@ -22,7 +22,6 @@
                 .single-img {
                     width: 720px;
                     position: absolute;
-
                 }
             }
         }
@@ -36,26 +35,25 @@
             width: calc(50%);
 
             .content-right-side {
+                .project-section-title {
+                    position: absolute;
+                    top: 20%;
+                    left: 93px;
+                    font-family: 'Open Sans Condensed', sans-serif;
+                    font-size: calc(5vw + 20px);
+                }
 
-              .project-section-title {
-                position: absolute;
-                top: 20%;
-                left: 100px;
-                font-family: 'Open Sans Condensed', sans-serif;
-                font-size: calc(5vw + 20px)
-              }
-              .project-section-content {
-                position: absolute;
-                top: 42%;
-                left: 100px;
-                font-family: 'Pathway Gothic One', sans-serif;
-                font-size: 16px;
-                letter-spacing: 1px;
-                line-height: 30px;
-                width: 480px;
-                text-align: justify;
-
-              }
+                .project-section-content {
+                    position: absolute;
+                    top: 42%;
+                    left: 100px;
+                    font-family: 'Pathway Gothic One', sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                    width: 480px;
+                    text-align: justify;
+                }
             }
         }
     }
@@ -64,9 +62,9 @@
   Bg Colors
 ************/
 #blue-single {
-  background-image: url('images/projects/feverall-proj-bg.png');
-  background-size: cover;
-  background-position: -12%;
+    background-image: url('images/projects/feverall-proj-bg.png');
+    background-size: cover;
+    background-position: -12%;
 }
 
 #yellow-single {
@@ -76,13 +74,75 @@
 }
 
 #green-single {
-  background-image: url('images/projects/nicenclean-proj-bg.png');
-  background-size: cover;
-  background-position: 100%;
+    background-image: url('images/projects/nicenclean-proj-bg.png');
+    background-size: cover;
+    background-position: 100%;
 }
 
 #red-single {
-  background-image: url('images/projects/wine4food-proj-bg.png');
-  background-size: cover;
-  background-position: -20%;
+    background-image: url('images/projects/wine4food-proj-bg.png');
+    background-size: cover;
+    background-position: -20%;
+}
+/************
+  Lne
+**************/
+.intro-r-line-wrap {
+    position: relative;
+    margin: calc(11px + 1.3vw) 0 calc(7px + .9vw);
+    width: 6.77vw;
+    height: 4px;
+    top: 17vw;
+    left: 71px;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+.intro-r-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #3d3560;
+    transform: translate3d(30%, 30%, 0);
+}
+
+.intro-l-line-wrap {
+    position: relative;
+    width: 5.77vw;
+    height: 5px;
+    left: -2vw;
+    top: 2.2vw;
+}
+
+.intro-l-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    transform: translate3d(30%, 30%, 0);
+    opacity: 0.7;
+}
+
+.non-decor {
+    position: absolute;
+    top: 1vw;
+    left: 5vw;
+    text-decoration: none;
+    color: black;
+    opacity: .7;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 26px;
+}
+.non-decor:hover {
+  text-decoration: none;
+
+}
+.intro-l-line:hover {
+  
 }

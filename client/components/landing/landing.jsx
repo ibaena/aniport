@@ -43,6 +43,29 @@ Landing = React.createClass({
       }, 0500);
 
     });
+    $('#h-intro-line-container').on('click', function() {
+      $('#update').hide();
+      $('.landing-bg').removeClass('slideUpReturn');
+      $('.landing-bg').addClass('slideUp');
+      $('.pagenav-list').removeClass('border-dark');
+
+      setTimeout(function(){  //load 1st slide
+        $('.project-box').find('#fever').removeClass('hide-project');
+        $('.project-box').find('#amloid').addClass('hide-project');
+        $('.project-box').find('#nice').addClass('hide-project');
+        $('.project-box').find('#wine').addClass('hide-project');
+
+        $("#fever").prop("checked", true);
+        $('.intro-up').addClass('animated fadeIn');
+        $('.page-img').addClass('slideInRight');
+        $('.product-btn').addClass('proj-btn-ani ani-blue');          //button
+        setTimeout(function(){
+          $('.product-btn').removeClass('ani-blue');
+        },0700);
+
+      }, 0500);
+
+    });
   },
   render(){
     return (
@@ -65,6 +88,7 @@ Landing = React.createClass({
             <img src="images/nav/ivan-logo.png" className="landing-img-logo hide-nav-bg" />
           </div>
         </div>
+        <div id="h-intro-line-container" className="oh"><span id="h-intro-line-wrap" className="oh"><span id="h-intro-line"></span></span></div>
       </div>
     )
   }

@@ -110,6 +110,10 @@ Single = React.createClass({
       return (
       <div key={item._id}>
         <div className="project-left-side hide-project" id={item.bg}>
+          <div className="back-home">
+            <div className="intro-l-line-wrap oh"><div className="intro-l-line" ></div></div>
+            <a className="non-decor" href="/">Back</a>
+          </div>
           <div className="content-left-side">
             <img className="single-img" id={item.name+"-single"} src={item.image} alt={item.name} />
           </div>
@@ -117,6 +121,7 @@ Single = React.createClass({
         <div className={"project-right-side hide-project " +   item.content}>
           <div className="content-right-side">
             <h1 className="project-section-title">{item.large_header}</h1>
+            <div className="intro-r-line-wrap oh"><div className="intro-r-line" ></div></div>
             <div className="project-section-content">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
             </div>

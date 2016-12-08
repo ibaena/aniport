@@ -4,12 +4,11 @@
 .roles-bg {
     width: 100%;
     height: 200px;
-    position: absolute;
     background-image: url('images/roles/lightpaperfibers.png');
     background-size: contain;
 
     .role-component-list {
-        position: absolute;
+        position: relative;
         top: 5vw;
         left: 5vw;
         width: 80vw;

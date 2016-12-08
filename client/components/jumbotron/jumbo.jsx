@@ -45,25 +45,25 @@ Jumbo = React.createClass({
     $('.nav-link').on('click tap', function(){
       let roleUrl = $(this).attr('href');
       if (roleUrl === '/feverall'){
-        $('#feverall-screen').show();
+        $('#feverall-screen').show().fadeIn();
 
         $('#amloid-screen').hide();
         $('#nicenclean-screen').hide();
         $('#wine4food-screen').hide();
       }else if (roleUrl === '/amloid'){
-        $('#amloid-screen').show();
+        $('#amloid-screen').show().fadeIn();
         //Hide others
         $('#feverall-screen').hide();
         $('#nicenclean-screen').hide();
         $('#wine4food-screen').hide();
       }else if (roleUrl === '/nicenclean'){
-        $('#nicenclean-screen').show();
+        $('#nicenclean-screen').show().fadeIn();
         //Hide others
         $('#feverall-screen').hide();
         $('#amloid-screen').hide();
         $('#wine4food-screen').hide();
       }else if (roleUrl === '/wine4food'){
-        $('#wine4food-screen').show();
+        $('#wine4food-screen').show().fadeIn();
         //Hide others
         $('#feverall-screen').hide();
         $('#amloid-screen').hide();

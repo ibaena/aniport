@@ -12,7 +12,6 @@
     position: absolute;
     z-index: 10;
 
-
     #landing-overlay {
         position: absolute;
         height: 100.1vh;
@@ -39,7 +38,6 @@
     color: #fff;
     letter-spacing: 2px;
     box-sizing: border-box;
-
 
     li {
         color: white !important;
@@ -119,17 +117,55 @@
 .logo {}
 
 .btn-wrapper {
-  position: absolute;
-  bottom: -55vh;
-  left: 40vh;
-  opacity: .3;
+    position: absolute;
+    bottom: -55vh;
+    left: 40vh;
+    opacity: 0.3;
 
-  .btn-enter {
-    cursor: pointer;
-    color: white;
-    font-size: .9em;
-  }
-  .btn-enter:hover {
-    color:black;
-  }
+    .btn-enter {
+        cursor: pointer;
+        color: white;
+        font-size: 0.9em;
+    }
+
+    .btn-enter:hover {
+        color: black;
+    }
+}
+/**********
+  Line
+**********/
+#h-intro-line-container {
+    position: absolute;
+    margin: 0 0 0 -30px;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 5.24vw;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+}
+
+#h-intro-line-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: beige;
+  opacity: .5;
+  transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+#h-intro-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translate3d(0px, 0%, 0px);
+}
+#h-intro-line-container:hover {
+      transform:translatey(20px);
 }
