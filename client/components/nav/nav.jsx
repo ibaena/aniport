@@ -59,7 +59,7 @@ Nav = React.createClass({
       return (
 
         <li className="navlist-item" key={item._id}>
-          <a href={item.src} className="white-text nav-link alwaysTop">{item.name}
+          <a href={item.src} className="white-text nav-link alwaysTop" >{item.name}
             <img src={item.background} className={item.class} id={item.elementId} alt={item.name} />
           </a>
         </li>
@@ -76,7 +76,7 @@ Nav = React.createClass({
     });
     return (
       <div>
-        <div id="update"><span id="update-text">Last Update:</span> <span id="update-date">November 2016</span></div>
+        <div id="update"><span id="update-text">Last Update:</span> <span id="update-date">December 2016</span></div>
         <btn className="btn-nav btn-square-fixed button_sliding_bg button_sliding_bg_2 btn-border" id="nav-btn">
           <div className="bar bar-top btn-border"></div>
           <div className="bar bar-mid btn-border"></div>

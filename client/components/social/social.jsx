@@ -9,11 +9,13 @@ Social = React.createClass({
     {_id:'3', name:'Gab', url:'https://gab.ai/ibaena', icon:'' },
   ],
   sites:[
-    {_id:'0', name:'TDP', status:'*In Development Stage'},
-    {_id:'1', name:'Finlandia', status:'*In Design Stage'},
-    {_id:'2', name:'Servometer', status:'Up'},
-    {_id:'3', name:'Maccaferys', status:'Up'},
+    {_id:'0', name:'TDP (In Development)', status:'*In Development Stage'},
+    {_id:'1', name:'Finlandia (In Design)', status:'*In Design Stage'},
+    {_id:'2', name:'Servometer', url:'https://servometer.com'},
+    {_id:'3', name:'Maccaferys', url:'http://mccaffreys.com/'},
   ],
+  componentDidMount(){
+  },
   render(){
     var links = this.contact.map(function(item){
       return (
@@ -42,9 +44,7 @@ Social = React.createClass({
 
           <div className="one-half">
             <h1 className="social-header">Other Projects:</h1>
-            <ul>
               {projects}
-            </ul>
           </div>
           <div className="one-half">
             <h1 className="social-header">Contact:</h1>

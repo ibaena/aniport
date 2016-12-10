@@ -130,7 +130,8 @@
 
         .product-btn-wrapper {
             .product-btn {
-              color: black;
+              font-family: 'Pathway Gothic One', sans-serif;
+              letter-spacing: 1px !important;
               text-decoration: none;
                 border-style: solid;
                 border-width: thin;
@@ -194,7 +195,7 @@
 
 .proj-btn-ani:hover {
     box-shadow: inset 0 100px 0 0 #000066 !important;
-    color: white;
+    color: white !important;
 }
 
 .ani-blue {
@@ -203,7 +204,7 @@
 }
 .ani-blue-hover {
     box-shadow: inset 0 0 0 0 #000066 !important;
-    color: white;
+    color: white !important;
 }
 .header-title-large {
     position: absolute;
@@ -254,30 +255,10 @@
     }
 }
 
-.product-btn-wrapper {
-    .product-btn {
-        border-style: solid;
-        border-width: thin;
-        border-color: lightgray;
-        width: 130px;
-        height: 40px;
-        cursor: pointer;
-        position: absolute;
-        bottom: -70px;
-        left: 31em;
-        background: white;
-        padding: 9px;
-        text-align: center;
-        box-shadow: inset 0 0 0 0 lightgray;
-        -webkit-transition: all ease 0.8s;
-        -moz-transition: all ease 0.8s;
-        transition: all ease 0.8s;
-    }
+//make btn text black not default anchor blue
+a {
+  color: black;
 
-    .product-btn:hover {
-        box-shadow: inset 0 100px 0 0 lightgray;
-        color: white;
-    }
 }
 
 

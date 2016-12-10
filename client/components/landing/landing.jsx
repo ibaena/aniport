@@ -4,14 +4,17 @@ import { mount } from 'react-mounter';
 Landing = React.createClass({
 
   componentDidMount(){
+    $('#h-intro-line-container').hide();
     //preload
     $('.intro-one-text , .intro-two-text').hide();
     setTimeout(function(){
       $('.side-list-landing').animate({left: '1vh'}, 0700);
+
     },8600);
     setTimeout(function(){
       $('.intro-one-text , .intro-two-text').show();
       $('.intro-one-text , .intro-two-text').toggleClass('c-ani fadeInUp');
+
     },6600);
 
 
