@@ -120,7 +120,6 @@ Pagenav = React.createClass({
       return (
         <li className="pagenav-list-item" key={item._id}>
           <input type="radio" className="radio-nav" id={item.class_id} value={item.name_large} name="page-nav"/>
-          <label className="drinkcard-cc visa" htmlFor="0"></label>
           <span className="hide-project word">{item.name_large}</span>
         </li>
       )

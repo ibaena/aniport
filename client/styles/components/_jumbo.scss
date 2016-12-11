@@ -4,36 +4,64 @@
 .jumbo-bg {
     height: 100vh;
     width: 100%;
+    color: white;
 
     .pallet {
         height: 100%;
         position: relative;
-        top:10vh;
+    }
 
+    #feverall-screen1 {
+        background-image: url("images/screens/fever_screen.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
-    #feverall-screen {
-      background-image: url("images/screens/fever_screen.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50%;
-    }
-    #amloid-screen {
-      background-image: url("images/screens/amloid_screen.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50%;
-    }
-    #nicenclean-screen {
-      background-image: url("images/screens/nice_screen.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50%;
-    }
-    #wine4food-screen {
-      background-image: url("images/screens/wine_screen.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 50%;
 
+    #amloid-screen1 {
+        background-image: url("images/screens/amloid_screen.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
+
+    #nicenclean-screen1 {
+        background-image: url("images/screens/nice_screen.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    #wine4food-screen1 {
+        background-image: url("images/screens/wine_screen.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+}
+
+#jumbo-top-bg {
+    background-image: url("images/jumbo/twinkle_twinkle.png");
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+#jumbo-bottom-bg {
+    background-image: url("images/jumbo/sayagata-400px.png");
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.jumbo-center-img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 17px 26px 0 rgba(0,0,0,0.75);
+    height: 550px;
+    width: 800px;
+}
+.jumbo-img-wrapper {
+  position: relative;
+  bottom: 90vh;
 }

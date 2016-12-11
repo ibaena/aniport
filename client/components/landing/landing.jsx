@@ -9,7 +9,7 @@ Landing = React.createClass({
     $('.intro-one-text , .intro-two-text').hide();
     setTimeout(function(){
       $('.side-list-landing').animate({left: '1vh'}, 0700);
-
+      $('#h-intro-line-container').show();
     },8600);
     setTimeout(function(){
       $('.intro-one-text , .intro-two-text').show();

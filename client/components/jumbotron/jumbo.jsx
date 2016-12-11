@@ -3,10 +3,10 @@ import { mount } from 'react-mounter';
 
 Jumbo = React.createClass({
   sites:[
-    {_id:'0', name:'feverall', bg:'screens/fever_screen.png', class:'feverall-screen'},
-    {_id:'1', name:'amloid', bg:'screens/amloid_screen.png', class:'amloid-screen'},
-    {_id:'2', name:'nicenclean', bg:'screens/nice_screen.png', class:'nicenclean-screen'},
-    {_id:'3', name:'wine4fod', bg:'screens/wine_screen.png', class:'wine4food-screen'},
+    {_id:'0', name:'feverall', bg:'images/screens/fever_screen.png', class:'feverall-screen'},
+    {_id:'1', name:'amloid', bg:'images/screens/amloid_screen.png', class:'amloid-screen'},
+    {_id:'2', name:'nicenclean', bg:'images/screens/nice_screen.png', class:'nicenclean-screen'},
+    {_id:'3', name:'wine4fod', bg:'images/screens/wine_screen.png', class:'wine4food-screen'},
   ],
   componentDidMount(){
     $('#amloid-screen').hide();
@@ -74,11 +74,15 @@ Jumbo = React.createClass({
   render(){
     var projects = this.sites.map(function(item){
       return (
-        <div className="pallet" id={item.class} key={item._id}></div>
+        <div className="jumbo-img-wrapper" key={item._id}>
+            <img src={item.bg} className="jumbo-center-img" id={item.class} />
+        </div>
       )
     });
     return (
       <div className="jumbo-bg">
+        <div id="jumbo-top-bg"></div>
+        <div id="jumbo-bottom-bg"></div>
         {projects}
       </div>
     )
