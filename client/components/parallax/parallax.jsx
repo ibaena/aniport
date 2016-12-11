@@ -4,7 +4,7 @@ import { mount } from 'react-mounter';
 Parallax = React.createClass({
   render(){
     return (
-      <div>
+      <div className="parallax-bg">
         para
       </div>
     )

@@ -1,8 +1,13 @@
 /*****************
   Project Styles
 ******************/
+
 ::-webkit-scrollbar {
     display: none;
+}
+
+.no-scroll {
+  overflow-y: scroll !important;
 }
 
 .projects-wrapper {
@@ -130,9 +135,9 @@
 
         .product-btn-wrapper {
             .product-btn {
-              font-family: 'Pathway Gothic One', sans-serif;
-              letter-spacing: 1px !important;
-              text-decoration: none;
+                font-family: 'Pathway Gothic One', sans-serif;
+                letter-spacing: 1px !important;
+                text-decoration: none;
                 border-style: solid;
                 border-width: thin;
                 border-color: lightgray;
@@ -202,10 +207,12 @@
     box-shadow: inset 0 100px 0 0 #000066 !important;
     color: white;
 }
+
 .ani-blue-hover {
     box-shadow: inset 0 0 0 0 #000066 !important;
     color: white !important;
 }
+
 .header-title-large {
     position: absolute;
     top: -375px;
@@ -254,19 +261,14 @@
         bottom: -40px;
     }
 }
-
 //make btn text black not default anchor blue
 a {
-  color: black;
-
+    color: black;
 }
-
-
 
 .show-project {
     display: inherit;
 }
-
 /****************
   Feveral Button
   **************/
@@ -298,6 +300,7 @@ a {
     box-shadow: inset 0 100px 0 0 #FFCC00 !important;
     color: white;
 }
+
 .ani-yellow-hover {
     box-shadow: inset 0 0 0 0 #FFCC00 !important;
     color: white;
@@ -365,6 +368,7 @@ a {
     color: white;
 }
 
-.box-fever , .box-amloid {
-  top: 32vh;
+.box-amloid,
+.box-fever {
+    top: 32vh;
 }

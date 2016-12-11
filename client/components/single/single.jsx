@@ -63,6 +63,7 @@ Single = React.createClass({
             //Delete
               $('.single-bg').find('#yellow-single').removeClass('animated slideInLeft').addClass('hide-project');
               $('.single-bg').find('#green-single').removeClass('animated slideInLeft').addClass('hide-project');
+              $('.single-bg').find('#red-single').removeClass('animated slideInLeft').addClass('hide-project');
               //hide
                 $('.single-bg').find('.amloid-proj-content').addClass('hide-project').removeClass('animated slideInUp');
                 $('.single-bg').find('.nicenclean-proj-content').addClass('hide-project').removeClass('animated slideInUp');

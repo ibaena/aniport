@@ -17,4 +17,5 @@ publicRoutes.route('/:id',{
   action(){
     mount(Projectlayout,{})
   }
+  
 });

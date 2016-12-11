@@ -4,13 +4,13 @@ import { mount } from 'react-mounter';
 Projectlayout = React.createClass({
   render(){
     return (
-      <div >
+      <div id="project-layout" >
         <Nav />
-        <div className="">
+        <div className="no-scroll">
             <Single />
             <Roles />
             <Jumbo />
-
+            <Parallax />
         </div>
       </div>
     )

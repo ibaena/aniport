@@ -34,7 +34,8 @@ Nav = React.createClass({
 
           $('.navlist').toggleClass('hide-nav-bg fadeIn');
           $('.contactlist').toggleClass('hide-nav-bg fadeIn');
-  ;
+          window.scrollTo(0, 0);
+  
     });
 
     $(".btn-nav").on("click tap", function(){
