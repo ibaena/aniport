@@ -1,8 +1,12 @@
 /**********************
     Parallax Styles
 **********************/
-
 .parallax-bg {
-  height: 100vh;
-  width: 100%;
+    width: 100%;
+    background-image: url("images/jumbo/twinkle_twinkle.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70vh;
 }

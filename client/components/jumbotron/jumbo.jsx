@@ -91,7 +91,6 @@ Jumbo = React.createClass({
           (element_top_position <= window_bottom_position)) {
           $element.addClass('bounce-up-in-view');
 
-
         } else {
           $element.removeClass('bounce-up-in-view');
         }
@@ -101,6 +100,68 @@ Jumbo = React.createClass({
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
 
+    setTimeout(function(){
+    let topbg = window.location.pathname;
+    if (topbg === '/feverall'){
+      $('#jumbo-top-bg').addClass('feverall-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('amloid-screen');
+      $('#jumbo-top-bg').removeClass('wine4food-screen');
+      $('#jumbo-top-bg').removeClass('nicenclean-screen');
+
+    }else if (topbg === '/amloid'){
+      $('#jumbo-top-bg').addClass('amloid-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('feverall-screen');
+      $('#jumbo-top-bg').removeClass('wine4food-screen');
+      $('#jumbo-top-bg').removeClass('nicenclean-screen');
+
+    }else if (topbg === '/nicenclean'){
+      $('#jumbo-top-bg').addClass('nicenclean-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('amloid-screen');
+      $('#jumbo-top-bg').removeClass('wine4food-screen');
+      $('#jumbo-top-bg').removeClass('feverall-screen');
+
+    }else if (topbg === '/wine4food'){
+      $('#jumbo-top-bg').addClass('wine4food-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('amloid-screen');
+      $('#jumbo-top-bg').removeClass('feverall-screen');
+      $('#jumbo-top-bg').removeClass('nicenclean-screen');
+    }
+  },300);
+  $('.nav-link').on('click tap', function(){
+    let topUrl = $(this).attr('href');
+    if (topUrl === '/feverall'){
+      $('#jumbo-top-bg').addClass('feverall-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('amloid-screen');
+      $('#jumbo-top-bg').removeClass('wine4food-screen');
+      $('#jumbo-top-bg').removeClass('nicenclean-screen');
+
+    }else if (topUrl === '/amloid'){
+      $('#jumbo-top-bg').addClass('amloid-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('feverall-screen');
+      $('#jumbo-top-bg').removeClass('wine4food-screen');
+      $('#jumbo-top-bg').removeClass('nicenclean-screen');
+
+    }else if (topUrl === '/nicenclean'){
+      $('#jumbo-top-bg').addClass('nicenclean-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('amloid-screen');
+      $('#jumbo-top-bg').removeClass('wine4food-screen');
+      $('#jumbo-top-bg').removeClass('feverall-screen');
+
+    }else if (topUrl === '/wine4food'){
+      $('#jumbo-top-bg').addClass('wine4food-screen');
+      //Remove Other Classes
+      $('#jumbo-top-bg').removeClass('amloid-screen');
+      $('#jumbo-top-bg').removeClass('feverall-screen');
+      $('#jumbo-top-bg').removeClass('nicenclean-screen');
+    }
+  });
   },
   render(){
     var projects = this.sites.map(function(item){
@@ -112,7 +173,7 @@ Jumbo = React.createClass({
     });
     return (
       <div className="jumbo-bg bounce-up">
-        <div id="jumbo-top-bg"></div>
+        <div id="jumbo-top-bg" ></div>
         <div id="jumbo-bottom-bg"></div>
         {projects}
       </div>
