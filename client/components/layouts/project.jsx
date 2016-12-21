@@ -10,7 +10,9 @@ Projectlayout = React.createClass({
             <Single />
             <Roles />
             <Jumbo />
+            <Mobile />
             <Parallax />
+
         </div>
       </div>
     )

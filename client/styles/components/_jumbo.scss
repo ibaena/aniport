@@ -2,7 +2,7 @@
   Jumbo Styles
 ****************/
 .jumbo-bg {
-    height: 100vh;
+    height: 135vh;
     width: 100%;
     color: white;
 
@@ -12,10 +12,10 @@
     }
 
     .feverall-screen {
-    background: #fc5e57;
-    width: 100%;
-    height: 50vh;
-    position: relative;
+        background: #fc5e57;
+        width: 100%;
+        height: 50vh;
+        position: relative;
     }
 
     .amloid-screen {
@@ -41,9 +41,8 @@
 }
 
 #jumbo-top-bg {
-
     width: 100%;
-    height: 50vh;
+    height: 85vh;
     position: relative;
 }
 
@@ -61,32 +60,42 @@
     height: 550px;
     width: 800px;
 }
+
 .jumbo-img-wrapper {
-  position: relative;
-  bottom: 90vh;
+    position: relative;
+    bottom: 90vh;
 }
 
-.bounce-up  {
-  opacity: 0;
-  -moz-transition: all 700ms ease-out;
-  -webkit-transition: all 700ms ease-out;
-  -o-transition: all 700ms ease-out;
-  transition: all 700ms ease-out;
-  -moz-transform: translate3d(0px, 200px, 0px);
-  -webkit-transform: translate3d(0px, 200px, 0px);
-  -o-transform: translate(0px, 200px);
-  -ms-transform: translate(0px, 200px);
-  transform: translate3d(0px, 200, 0px);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
+.bounce-up {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-.bounce-up-in-view  {
-  opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+.bounce-up-in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.jumbo-intro-container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10vh;
+    position: relative;
+    top: 2vh;
+
 }

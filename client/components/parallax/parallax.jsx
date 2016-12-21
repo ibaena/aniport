@@ -5,7 +5,6 @@ Parallax = React.createClass({
   render(){
     return (
       <div className="parallax-bg">
-        para
       </div>
     )
   }

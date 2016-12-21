@@ -6,7 +6,7 @@ Jumbo = React.createClass({
     {_id:'0', name:'feverall', bg:'images/screens/fever_screen.png', class:'feverall-screen'},
     {_id:'1', name:'amloid', bg:'images/screens/amloid_screen.png', class:'amloid-screen'},
     {_id:'2', name:'nicenclean', bg:'images/screens/nice_screen.png', class:'nicenclean-screen'},
-    {_id:'3', name:'wine4fod', bg:'images/screens/wine_screen.png', class:'wine4food-screen'},
+    {_id:'3', name:'wine4food', bg:'images/screens/wine_screen.png', class:'wine4food-screen'},
   ],
   componentDidMount(){
     $('#amloid-screen').hide();
@@ -173,7 +173,13 @@ Jumbo = React.createClass({
     });
     return (
       <div className="jumbo-bg bounce-up">
-        <div id="jumbo-top-bg" ></div>
+
+        <div id="jumbo-top-bg" >
+          <div className="jumbo-intro-container">
+            <h1 className="jumbo-header-text">A SEAMLESS EXPERIENCE</h1>
+            <p className="jumbo-text">To ease the experience the site was designed to seamlessly take the user to different stories on the homepage. Text, icons and panels moving smoothly to not interrupt the user flow.</p>
+          </div>
+        </div>
         <div id="jumbo-bottom-bg"></div>
         {projects}
       </div>
