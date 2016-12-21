@@ -6,7 +6,7 @@ Single = React.createClass({
   projects:[
     {_id:'0', name:'feverall', upper:"Feverall", bg:'blue-single', content:'feverall-proj-content', image:'images/nav/feverthree.png', large_header:'FEVERALL', description:'BLAH '},
     {_id:'1', name:'amloid', upper:"Amloid", bg:'yellow-single', content:'amloid-proj-content', image:'images/nav/bothamloid.png', large_header:'AMLOID', description:'BLAH'},
-    {_id:'2', name:'nicenclean', upper:"Nice N Clean", bg:'green-single', content:'nicenclean-proj-content', image:'images/nav/nicencleanboth.png', large_header:'NICE N CLEAN', description:'BLAH '},
+    {_id:'2', name:'nicenclean', upper:"Nice N Clean", bg:'green-single', content:'nicenclean-proj-content', image:'images/nav/tdpboth.png', large_header:'NICE N CLEAN', description:'BLAH '},
     {_id:'3', name:'wine4food', upper:"Wine4Food", bg:'red-single', content:'wine4food-proj-content', image:'images/nav/wineboth.png', large_header:'WINE4FOOD', description:'BLAH'},
   ],
   componentDidMount(){
