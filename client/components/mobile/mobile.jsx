@@ -3,9 +3,9 @@ import { mount } from 'react-mounter';
 
 Mobile = React.createClass({
   mobile:[
-    {_id:'0', name:'feverall', bg:'images/screens/fever_screen.png', class:'feverall-screen'},
+    {_id:'0', name:'feverall', bg:'images/screens/spanish-fever_screen.png', class:'feverall-screen'},
     {_id:'1', name:'amloid', bg:'images/mobile/amloid/amloid-both.png', class:'amloid-screen'},
-    {_id:'2', name:'nicenclean', bg:'images/screens/nice_screen.png', class:'nicenclean-screen'},
+    {_id:'2', name:'nicenclean', bg:'images/screens/map-closed_screen.png', class:'nicenclean-screen'},
     {_id:'3', name:'wine4food', bg:'images/mobile/wine/wine-mobile-both.png', class:'wine4food-screen'},
   ],
   componentDidMount(){

@@ -5,7 +5,7 @@ Jumbo = React.createClass({
   sites:[
     {_id:'0', name:'feverall', bg:'images/screens/fever_screen.png', class:'feverall-screen'},
     {_id:'1', name:'amloid', bg:'images/screens/amloid_screen.png', class:'amloid-screen'},
-    {_id:'2', name:'nicenclean', bg:'images/screens/nice_screen.png', class:'nicenclean-screen'},
+    {_id:'2', name:'nicenclean', bg:'images/screens/tampa_screen.png', class:'nicenclean-screen'},
     {_id:'3', name:'wine4food', bg:'images/screens/wine_screen.png', class:'wine4food-screen'},
   ],
   componentDidMount(){

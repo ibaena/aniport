@@ -6,7 +6,7 @@ Nav = React.createClass({
     {_id:'0',name:'Home', src:'/', background:'images/nav/ivan-stencil.png', class:'nav-bg-home hide-nav-bg animated home-nav-img ', color:'', elementId: 'home-bg' },
     {_id:'1',name:'Amloid Toys', src:'/amloid', background:'images/nav/bothamloid.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
     {_id:'2',name:'Feverall', src:'/feverall', background:'images/nav/feverthree.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
-    {_id:'3',name:'Nice n Clean', src:'/nicenclean', background:'images/nav/nicencleanboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
+    {_id:'3',name:'Tampas Downtown', src:'/nicenclean', background:'images/nav/tdpboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
     {_id:'4',name:'Wine 4 Food', src:'/wine4food', background:'images/nav/wineboth.png', class:'nav-bg hide-nav-bg animated center-img', color:'' },
   ],
   contact:[
@@ -35,7 +35,7 @@ Nav = React.createClass({
           $('.navlist').toggleClass('hide-nav-bg fadeIn');
           $('.contactlist').toggleClass('hide-nav-bg fadeIn');
           window.scrollTo(0, 0);
-  
+
     });
 
     $(".btn-nav").on("click tap", function(){
