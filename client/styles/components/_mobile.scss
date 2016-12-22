@@ -19,6 +19,18 @@
   .mobile-intro-container {
     width: 50%;
     margin: 0 auto;
-    padding: 8vh 10vh 1  vh 10vh;
+    padding: 8vh 10vh 1vh 10vh;
+
+    .mobile-intro-header {
+      font-family: 'Pathway Gothic One', sans-serif;
+      font-size: calc(1vh + 4.5em);
+      margin-bottom: 5vh;
+      text-align: center;
+    }
+    .mobile-intro-text {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: calc(1vh + 1.2em);
+      text-align: justify;
+    }
   }
 }

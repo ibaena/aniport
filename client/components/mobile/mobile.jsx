@@ -3,10 +3,10 @@ import { mount } from 'react-mounter';
 
 Mobile = React.createClass({
   mobile:[
-    {_id:'0', name:'feverall', bg:'images/screens/spanish-fever_screen.png', class:'feverall-screen'},
-    {_id:'1', name:'amloid', bg:'images/mobile/amloid/amloid-both.png', class:'amloid-screen'},
-    {_id:'2', name:'nicenclean', bg:'images/screens/map-closed_screen.png', class:'nicenclean-screen'},
-    {_id:'3', name:'wine4food', bg:'images/mobile/wine/wine-mobile-both.png', class:'wine4food-screen'},
+    {_id:'0', name:'feverall', bg:'images/screens/spanish-fever_screen.png', class:'feverall-screen', description:'Since the product was also being marketed in South America and Mexico, I also developed a site with spanish content.'},
+    {_id:'1', name:'amloid', bg:'images/mobile/amloid/amloid-both.png', class:'amloid-screen', description:'Mobile first allowing for seamles experience across multiple devices.'},
+    {_id:'2', name:'nicenclean', bg:'images/screens/map-closed_screen.png', class:'nicenclean-screen', description:'The interactive map is way for tourist in the Tampa area to filter through the many activites Tamp offers. It was designed to be a simple way for tourist to plan their days.'},
+    {_id:'3', name:'wine4food', bg:'images/mobile/wine/wine-mobile-both.png', class:'wine4food-screen', description:'Wine4food was made with amobile first approach sine the owner is an avid traveler and many of his recipes in his blog come when traveling locally, and abroad.'},
   ],
   componentDidMount(){
     //fade DOM element in on scroll
@@ -106,7 +106,7 @@ Mobile = React.createClass({
           <div className="mobile-intro-container" >
             <h3 className="mobile-intro-header">Responsive Design</h3>
             <p className="mobile-intro-text">
-              The entire website was designed mobile first, mainly because the story of Internet.org is for a global audience connecting with a wide range of devices.
+                {item.description}
             </p>
           </div>
           <img src={item.bg}  className="mobile-img"/ >
